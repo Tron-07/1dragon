@@ -1,0 +1,285 @@
+<!DOCTYPE html><html lang="en" data-astro-cid-at4y73ej> <head><meta charset="utf-8"><link rel="icon" type="image/svg+xml" href="/favicon.svg"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="generator" content="Astro v5.16.3"><title>Dragon-CTF</title><meta name="description" content="CTF Walkthroughs"><script>
+      (function () {
+        const savedTheme = localStorage.getItem("theme") || "dark";
+        const prefersDark = window.matchMedia(
+          "(prefers-color-scheme: dark)"
+        ).matches;
+        const initialTheme =
+          savedTheme === "system"
+            ? prefersDark
+              ? "dark"
+              : "light"
+            : savedTheme;
+
+        if (initialTheme === "dark") {
+          document.documentElement.classList.add("dark");
+        } else {
+          document.documentElement.classList.remove("dark");
+        }
+      })();
+    </script><script type="module">document.addEventListener("DOMContentLoaded",function(){window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change",e=>{localStorage.getItem("theme")==="system"&&(e.matches?document.documentElement.classList.add("dark"):document.documentElement.classList.remove("dark"))})});</script><script>(function(){const postsData = "[{\"title\":\"Mice  PGP walkthrough\",\"description\":\"Target - Mice, OS - Windows\",\"date\":\"2025-12-12T00:00:00.000Z\",\"readTime\":\"10 min read\",\"image\":\"/assets/images/posts/post2.jpg\",\"slug\":\"Mice PGP\",\"href\":\"/posts/Mice PGP\"},{\"title\":\"Shenzi PGP walkthrough\",\"description\":\"Target - Shenzi, OS - Windows\",\"date\":\"2025-12-12T00:00:00.000Z\",\"readTime\":\"10 min read\",\"image\":\"/assets/images/Shenzi/Xampp-dashboard.png\",\"slug\":\"Shenzi PGP\",\"href\":\"/posts/Shenzi PGP\"},{\"title\":\"Spider Society PGP walkthrough\",\"description\":\"Target - Spider Society, OS - Linux\",\"date\":\"2025-12-12T00:00:00.000Z\",\"readTime\":\"15 min read\",\"image\":\"/assets/images/Ss/Control-Panel.png\",\"slug\":\"Spider Society PGP\",\"href\":\"/posts/Spider Society PGP\"}]";
+const POSTS_PER_PAGE = 5;
+
+      document.addEventListener("DOMContentLoaded", function () {
+        const allPosts = JSON.parse(postsData);
+        const postsPerPage = POSTS_PER_PAGE;
+        const totalPosts = allPosts.length;
+        const totalPages = Math.ceil(totalPosts / postsPerPage);
+
+        function getCurrentPage() {
+          const urlParams = new URLSearchParams(window.location.search);
+          const page = urlParams.get("page");
+          return page ? parseInt(page, 10) : 1;
+        }
+
+        function getPageUrl(page) {
+          if (page === 1) {
+            return "/posts/";
+          }
+          return `/posts/?page=${page}`;
+        }
+
+        function renderPosts(page) {
+          const currentPage = Math.max(1, Math.min(page, totalPages));
+          const startIndex = (currentPage - 1) * postsPerPage;
+          const endIndex = startIndex + postsPerPage;
+          const postsToShow = allPosts.slice(startIndex, endIndex);
+
+          const postsContainer = document.getElementById("posts-container");
+          if (!postsContainer) return;
+
+          postsContainer.innerHTML = postsToShow
+            .map(
+              (post) => `
+            <a href="${post.href}">
+              <div
+                class="relative border border-transparent border-dashed cursor-pointer p-7 group rounded-2xl"
+              >
+                <div
+                  class="absolute inset-0 z-20 w-full h-full duration-300 ease-out bg-white dark:bg-neutral-950 border border-dashed rounded-2xl border-neutral-300 dark:border-neutral-700 group-hover:-translate-x-1 group-hover:-translate-y-1"
+                >
+                  <div
+                    class="absolute inset-0 bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:24px_24px] dark:bg-[radial-gradient(#404040_1px,transparent_1px)] opacity-50"
+                  >
+                  </div>
+                </div>
+                <div
+                  class="absolute inset-0 z-10 w-full h-full duration-300 ease-out border border-dashed rounded-2xl border-neutral-300 dark:border-neutral-700 group-hover:translate-x-1 group-hover:translate-y-1"
+                >
+                </div>
+                <div
+                  class="relative z-30 duration-300 ease-out group-hover:-translate-x-1 group-hover:-translate-y-1"
+                >
+                  <div class="flex gap-8">
+                    <div class="flex-[2]">
+                      <h2 class="relative mb-4 pr-6">
+                        <span
+                          class="text-lg font-bold leading-tight tracking-tight sm:text-xl lg:text-2xl text-neutral-900 dark:text-neutral-100"
+                        >
+                          ${post.title}
+                        </span>
+                        <svg
+                          class="absolute top-[0.2rem] sm:top-[0.25rem] lg:top-[0.3rem] right-0 group-hover:translate-x-0 flex-shrink-0 -translate-x-1 w-4 h-4 stroke-current transition-all ease-in-out duration-200 transform opacity-0 group-hover:opacity-100 text-neutral-600 dark:text-neutral-400"
+                          viewBox="0 0 13 15"
+                        >
+                          <g
+                            stroke="none"
+                            stroke-width="1"
+                            fill="none"
+                            fill-rule="evenodd"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          >
+                            <g
+                              transform="translate(0.666667, 2.333333)"
+                              stroke="currentColor"
+                              stroke-width="2.4"
+                            >
+                              <g>
+                                <polyline
+                                  class="transition-all duration-200 ease-out opacity-0 delay-0 group-hover:opacity-100"
+                                  points="5.33333333 0 10.8333333 5.5 5.33333333 11"
+                                ></polyline>
+                                <line
+                                  class="transition-all duration-200 ease-out transform -translate-x-1 opacity-0 group-hover:translate-x-0 group-hover:opacity-100 group-hover:ml-0"
+                                  x1="10.8333333"
+                                  y1="5.5"
+                                  x2="0.833333333"
+                                  y2="5.16666667"
+                                ></line>
+                              </g>
+                            </g>
+                          </g>
+                        </svg>
+                      </h2>
+                      <p
+                        class="text-base text-neutral-600 dark:text-neutral-400 mb-3"
+                      >
+                        <span>${post.description}</span>
+                      </p>
+                      <div
+                        class="flex items-center gap-4 text-sm font-medium text-neutral-600 dark:text-neutral-400"
+                      >
+                        <span>Posted on ${post.date}</span>
+                        <span class="flex items-center">
+                          <svg
+                            class="w-4 h-4 mr-1"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-width="2"
+                              d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+                            ></path>
+                          </svg>
+                          ${post.readTime}
+                        </span>
+                      </div>
+                    </div>
+                    <div
+                      class="relative flex-1 h-48 rounded-xl overflow-hidden flex-shrink-0"
+                    >
+                      <img
+                        src="${post.image}"
+                        alt="${post.title}"
+                        class="w-full h-full object-cover"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          `
+            )
+            .join("");
+        }
+
+        function renderPagination(page) {
+          const currentPage = Math.max(1, Math.min(page, totalPages));
+          const paginationContainer = document.getElementById(
+            "pagination-container"
+          );
+          if (!paginationContainer) return;
+
+          if (totalPages <= 1) {
+            paginationContainer.innerHTML = "";
+            return;
+          }
+
+          let paginationHTML =
+            '<div class="flex justify-center items-center gap-2 mt-8">';
+
+          if (currentPage > 1) {
+            paginationHTML += `
+              <a
+                href="${getPageUrl(currentPage - 1)}"
+                class="px-3 py-1 text-sm font-medium text-neutral-600 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-neutral-100 transition-colors"
+              >
+                Previous
+              </a>
+            `;
+          } else {
+            paginationHTML += `
+              <span
+                class="px-3 py-1 text-sm font-medium text-neutral-600 dark:text-neutral-400 opacity-50 cursor-not-allowed"
+              >
+                Previous
+              </span>
+            `;
+          }
+
+          for (let i = 1; i <= totalPages; i++) {
+            const isCurrentPage = i === currentPage;
+            paginationHTML += `
+              <a
+                href="${getPageUrl(i)}"
+                aria-current="${isCurrentPage ? "page" : undefined}"
+                class="w-8 h-8 flex items-center justify-center rounded-full text-sm font-medium transition-colors ${
+                  isCurrentPage
+                    ? "bg-neutral-900 text-white dark:bg-neutral-100 dark:text-neutral-900"
+                    : "text-neutral-600 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-neutral-100"
+                }"
+              >
+                ${i}
+              </a>
+            `;
+          }
+
+          if (currentPage < totalPages) {
+            paginationHTML += `
+              <a
+                href="${getPageUrl(currentPage + 1)}"
+                class="px-3 py-1 text-sm font-medium text-neutral-600 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-neutral-100 transition-colors"
+              >
+                Next
+              </a>
+            `;
+          } else {
+            paginationHTML += `
+              <span
+                class="px-3 py-1 text-sm font-medium text-neutral-600 dark:text-neutral-400 opacity-50 cursor-not-allowed"
+              >
+                Next
+              </span>
+            `;
+          }
+
+          paginationHTML += "</div>";
+          paginationContainer.innerHTML = paginationHTML;
+        }
+
+        function handlePaginationClick(e) {
+          const target = e.target.closest("a");
+          if (!target || !target.href) return;
+
+          const href = target.getAttribute("href");
+          if (href && href.startsWith("/posts") && href.includes("?page=")) {
+            e.preventDefault();
+            const url = new URL(href, window.location.origin);
+            const page = url.searchParams.get("page") || "1";
+            window.history.pushState({ page }, "", href);
+            const currentPage = parseInt(page, 10);
+            renderPosts(currentPage);
+            renderPagination(currentPage);
+            window.scrollTo({ top: 0, behavior: "smooth" });
+          }
+        }
+
+        const currentPage = getCurrentPage();
+        renderPosts(currentPage);
+        renderPagination(currentPage);
+
+        const paginationContainer = document.getElementById(
+          "pagination-container"
+        );
+        if (paginationContainer) {
+          paginationContainer.addEventListener("click", handlePaginationClick);
+        }
+
+        window.addEventListener("popstate", function () {
+          const page = getCurrentPage();
+          renderPosts(page);
+          renderPagination(page);
+        });
+      });
+    })();</script><link rel="stylesheet" href="/_astro/about.xvh9vdT6.css">
+<style>body{margin:0;font-family:system-ui,-apple-system,sans-serif}@keyframes float{0%{transform:scale(1.2)}50%{transform:scale(1.3)}to{transform:scale(1.2)}}.dot-hexagon-light[data-astro-cid-at4y73ej]{background-image:radial-gradient(circle,#07f6926c 1px,transparent 1px),radial-gradient(circle,#7f7d7d61 1px,transparent 1px);background-size:24px 41.57px;background-repeat:repeat;background-position:0 0,12px 20.78px;animation:greenDown 8s linear infinite,greyDown 16s linear infinite}.dot-hexagon-dark[data-astro-cid-at4y73ej]{background-image:radial-gradient(circle,#ffffff35 1px,transparent 1px),radial-gradient(circle,#ffffff35 1px,transparent 1px);background-size:24px 41.57px;background-repeat:repeat;background-position:0 0,12px 20.78px;animation:greenDown 12s linear infinite,greyDown 24s linear infinite}@keyframes greenDown{0%{background-position:0 0,12px 20.78px}to{background-position:0 164.56px,12px 20.78px}}@keyframes greyDown{0%{background-position:0 0,12px 20.78px}to{background-position:0 83.14px,12px 62.35px}}
+</style></head> <body class="bg-white dark:bg-neutral-900 transition-colors duration-300" data-astro-cid-at4y73ej> <div class="fixed inset-0 z-0 pointer-events-none" data-astro-cid-at4y73ej> <div class="absolute inset-0 -z-10 dot-hexagon-light dark:dot-hexagon-dark" data-astro-cid-at4y73ej></div> <div class="absolute inset-0 bg-[radial-gradient(ellipse_80%_80%_at_50%_50%,transparent_0%,rgba(255,255,255,0.5)_60%,rgba(255,255,255,0.9)_85%,white_100%)] dark:bg-[radial-gradient(ellipse_80%_80%_at_50%_50%,transparent_0%,rgba(23,23,23,0.5)_60%,rgba(23,23,23,0.9)_85%,rgb(23,23,23)_100%)] -z-10" data-astro-cid-at4y73ej></div> <div class="absolute left-0 right-0 top-0 -z-10 m-auto h-[1200px] w-[1200px] rounded-full bg-neutral-400 opacity-10 blur-[100px]" data-astro-cid-at4y73ej></div> </div> <main class="flex-1 relative z-10" data-astro-cid-at4y73ej> <!-- Navigation Bar Component --><nav class="relative z-50"> <div class="container mx-auto px-4 sm:px-6 lg:px-8"> <div class="flex items-center justify-between h-16"> <a href="/" class="text-xl font-bold text-neutral-700 hover:text-neutral-400 dark:text-neutral-300 dark:hover:text-neutral-100 transition-colors"></a> <div class="flex items-center space-x-6"> <a href="/" class="text-neutral-600 hover:text-neutral-400 dark:text-neutral-400 dark:hover:text-neutral-200 transition-colors">Home</a> <a href="/posts/" class="text-neutral-600 hover:text-neutral-400 dark:text-neutral-400 dark:hover:text-neutral-200 transition-colors">CTF</a> <!-- <a
+          href="/projects/"
+          class="text-neutral-600 hover:text-neutral-400 dark:text-neutral-400 dark:hover:text-neutral-200 transition-colors"
+          >Projects</a
+        > --> <a href="/about/" class="text-neutral-600 hover:text-neutral-400 dark:text-neutral-400 dark:hover:text-neutral-200 transition-colors">About</a> <button id="theme-toggle" class="p-2 rounded-full text-neutral-600 hover:text-neutral-400 dark:text-neutral-400 dark:hover:text-neutral-200 transition-colors" title="Toggle theme"> <svg class="w-5 h-5 theme-icon-light hidden" fill="currentColor" viewBox="0 0 20 20"> <path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"></path> </svg> <svg class="w-5 h-5 theme-icon-dark hidden" fill="currentColor" viewBox="0 0 20 20"> <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path> </svg> </button> </div> </div> </div> </nav> <script type="module">document.addEventListener("DOMContentLoaded",function(){const t=document.getElementById("theme-toggle"),n=t.querySelector(".theme-icon-light"),c=t.querySelector(".theme-icon-dark");function o(e){e?(n.classList.add("hidden"),c.classList.remove("hidden")):(n.classList.remove("hidden"),c.classList.add("hidden"))}const s=document.documentElement.classList.contains("dark");o(s),t.addEventListener("click",function(){const e=document.documentElement.classList.contains("dark"),d=e?"light":"dark";document.documentElement.classList.toggle("dark"),o(!e),localStorage.setItem("theme",d)})});</script> <section class="relative z-20 w-[896px] mx-auto mt-24" data-astro-cid-at4y73ej> <div class="flex justify-between items-center mb-12" data-astro-cid-at4y73ej> <h2 class="text-2xl font-bold tracking-tight text-neutral-900 dark:text-neutral-100 sm:text-3xl lg:text-4xl" data-astro-cid-at4y73ej>
+CTF Walkthroughs
+</h2> </div> <div id="posts-container" class="flex flex-col items-stretch w-full gap-8" data-astro-cid-at4y73ej></div> <div id="pagination-container" data-astro-cid-at4y73ej></div> </section> </main> <!-- Footer Component --><section class="relative text-gray-700 min-h-[60px]"> <div class="container mx-auto px-7 max-w-7xl
+           flex justify-center items-end"> <div class="flex items-center space-x-3
+             absolute bottom-0 pb-2
+             text-neutral-700 dark:text-neutral-300"> <a href="/posts" class="group flex items-center space-x-1.5 font-semibold"> <span class="text-xl -translate-y-0.5
+                 group-hover:scale-[1.1]
+                 transition-transform duration-300 ease-in-out">
+Dragon-CTF
+</span> <span class="-translate-y-0.5">Decoder</span> </a> <span class="opacity-60">|</span> <p class="text-sm">
+© 2025 All rights reserved.
+</p> </div> </div> </section> </body></html>

