@@ -21,7 +21,7 @@ jobs:
     - name: Build Site
       run: |
           cd ./blog   # Change directory to /astro
-          npm build  # Install dependencies from package.json inside /astro
+          npm run build  # Install dependencies from package.json inside /astro
 
 
     - name: Deploy to GitHub Pages
