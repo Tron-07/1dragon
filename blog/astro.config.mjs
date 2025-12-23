@@ -6,7 +6,7 @@ import tailwind from '@astrojs/tailwind';
 export default defineConfig({
 
   base: '/1dragon/',
-  site: 'https://tron-07.github.io/',
+  site: 'https://tron-07.github.io/1dragon',
   
 
   integrations: [tailwind()],
