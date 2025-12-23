@@ -3,7 +3,7 @@ title: Mice  PGP walkthrough
 description: Target - Mice, OS - Windows
 date: 2025-12-12
 readTime: 10 min read
-image: /assets/images/mice/rdesk.png
+image: /1dragon/assets/images/mice/rdesk.png
 ---
 
 # Enum
