@@ -18,9 +18,8 @@ jobs:
           cd blog   # Change directory to /astro
           npm install  # Install dependencies from package.json inside /astro
 
-
     - name: Build Site
-      run: run: |
+      run: |
           cd /blog   # Change directory to /astro
           npm build  # Install dependencies from package.json inside /astro
 
