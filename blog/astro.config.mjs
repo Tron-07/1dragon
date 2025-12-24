@@ -5,8 +5,8 @@ import tailwind from '@astrojs/tailwind';
 // https://astro.build/config
 export default defineConfig({
 
-  base: '/1dragon/',
   site: 'https://tron-07.github.io/1dragon',
+  base: '/1dragon',
   
 
   integrations: [tailwind()],
