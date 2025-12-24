@@ -18,6 +18,6 @@ jobs:
 
       - uses: withastro/action@v2
         with:
-          path: ./astro
+          path: ./blog
           node-version: 18
           package-manager: npm
