@@ -159,7 +159,7 @@ Captured the local.txt
 
 ---
 
-# **Privilege Escalation*
+# *Privilege Escalation*
 
 After logging in as spidey looked for escalation vectors.
 

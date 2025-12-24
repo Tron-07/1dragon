@@ -6,7 +6,7 @@ image: ../assets/images/mice/rdesk.png
 date: 12-20-2025
 ---
 
-# **Enumeration*
+# *Enumeration*
 
 Started off with a nmap scan and gathered information about the target  network, systems, services, open ports.
 
@@ -56,7 +56,7 @@ https://github.com/p0dalirius/RemoteMouse-3.008-Exploit
 
 ---
 
-# **Initial Access*
+# *Initial Access*
 
 
 Executed the exploit with required parameters. 
@@ -93,7 +93,7 @@ Got the local.txt under C:\Users\Divine\Desktop
 ![](/1dragon/assets/images/mice/local.png)
 
 ---
- # **Privilege Escalation*
+ # *Privilege Escalation*
 
 Earlier nmap scan results showed that FileZilla service exist which is a lead for further internal enumeration.
 
