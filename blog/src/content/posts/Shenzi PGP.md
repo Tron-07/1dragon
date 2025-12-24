@@ -1,7 +1,7 @@
 ---
 title: Shenzi PGP walkthrough
 description: Target - Shenzi, OS - Windows
-date: 2025-18-12
+date: 2025-15-12
 readTime: 10 min read
 image: ../assets/images/Shenzi/Xampp-dashboard.png
 ---
@@ -184,7 +184,7 @@ Got the proof.txt under
 
 ![](/1dragon/assets/images/Shenzi/proof.png)
 
-
+---
 
 										Target compromised - |^| ^ ( |< 3 D
 
