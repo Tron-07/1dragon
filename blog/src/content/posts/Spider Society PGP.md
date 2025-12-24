@@ -228,11 +228,6 @@ Had a netcat listener at local port 4444. And Reverse shell connected back as ro
 The root.txt was captured under `/root/root.txt`
 
 ---
-# Note
-
-Fuzzing with different wordlists accordingly. Systemctl service privesc.
-
----
 
 
 										Target compromised - |^| ^ ( |< 3 D
