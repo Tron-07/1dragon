@@ -1,7 +1,7 @@
 ---
 title: Mice  PGP walkthrough
 description: Target - Mice, OS - Windows
-date: 2025-10-12
+date: 2025-20-12
 readTime: 10 min read
 image: "../assets/images/mice/rdesk.png"
 

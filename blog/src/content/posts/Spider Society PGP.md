@@ -1,7 +1,7 @@
 ---
 title: Spider Society PGP walkthrough
 description: Target - Spider Society, OS - Linux
-date: 2025-12-12
+date: 2025-14-11
 readTime: 15 min read
 image: ../assets/images/Ss/Control-Panel.png
 ---
