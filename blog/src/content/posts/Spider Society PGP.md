@@ -6,7 +6,7 @@ readTime: 15 min read
 image: ../assets/images/Ss/Control-Panel.png
 ---
 
-# Enum
+# *Enumeration*
 
 Gather information about the target  network, systems, services, open ports with nmap
 
@@ -97,7 +97,7 @@ libspider               [Status: 301, Size: 322, Words: 20, Lines: 10, Duration:
 
 
 -----------
-# Initial Access
+# **Initial Access*
 
 Discovered a control panel at /libspider 
 
@@ -159,7 +159,7 @@ Captured the local.txt
 
 ---
 
-# Privilege Escalation
+# **Privilege Escalation*
 
 After logging in as spidey looked for escalation vectors.
 
