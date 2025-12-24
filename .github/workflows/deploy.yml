@@ -20,3 +20,6 @@ jobs:
           path: ./blog
           node-version: 18
           package-manager: npm
+
+      - name: Deploy to GitHub Pages
+        uses: actions/deploy-pages@v4
