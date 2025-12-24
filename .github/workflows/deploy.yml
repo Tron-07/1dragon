@@ -20,11 +20,3 @@ jobs:
           path: ./blog
           node-version: 18
           package-manager: npm
-
-      - name: Upload Pages artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: ./blog/dist
-
-      - name: Deploy to GitHub Pages
-        uses: actions/deploy-pages@v4
