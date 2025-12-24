@@ -15,7 +15,7 @@ import { siteConfig } from "../config/content";
              text-neutral-700 dark:text-neutral-300"
     >
       <a
-        href="/posts"
+        href=`${import.meta.env.BASE_URL}posts/`
         class="group flex items-center space-x-1.5 font-semibold"
       >
         <span
@@ -25,7 +25,7 @@ import { siteConfig } from "../config/content";
         >
           Dragon-CTF
         </span>
-        <span class="-translate-y-0.5">Decoder</span>
+        
       </a>
 
       <span class="opacity-60">|</span>

@@ -3,7 +3,7 @@ title: Spider Society PGP walkthrough
 description: Target - Spider Society, OS - Linux
 date: 2025-12-12
 readTime: 15 min read
-image: /assets/images/Ss/Control-Panel.png
+image: ../assets/images/Ss/Control-Panel.png
 ---
 
 # Enum
@@ -101,21 +101,21 @@ libspider               [Status: 301, Size: 322, Words: 20, Lines: 10, Duration:
 
 Discovered a control panel at /libspider 
 
-![Control-Panel](/assets/images/Ss/Control-Panel.png)
+![Control-Panel](/1dragon/assets/images/Ss/Control-Panel.png)
 
 Logged in with creds `admin:admin` and that worked
 
-![Admin-panel](/assets/images/Ss/admin-panel.png)
+![Admin-panel](/1dragon/assets/images/Ss/admin-panel.png)
 
 Clicked on communications and that displayed credentials for FTP.
 
-![FTP-Creds](/assets/images/Ss/FTP-Creds.png)
+![FTP-Creds](/1dragon/assets/images/Ss/FTP-Creds.png)
 
 ```
 ftp ss_ftpbckuser@spidersociety.offsec.lab -p 2121
 ```
 
-![](/assets/images/Ss/ftp-login.png)
+![](/1dragon/assets/images/Ss/ftp-login.png)
 
 Moved into the libspider directory and downloaded all the files
 
@@ -125,21 +125,21 @@ prompt off
 mget *
 ```
 
-![](/assets/images/Ss/get-files.png)
+![](/1dragon/assets/images/Ss/get-files.png)
 
 One of the files from the ftp looked interesting and that actually contained a link, directory path for credentials file.
 
-![](/assets/images/Ss/fetch-creds.png)
+![](/1dragon/assets/images/Ss/fetch-creds.png)
 
 Accessed the link and discovered another set of credentials for DB as it says.
 
-![link.png](/assets/images/Ss/link.png)
+![link.png](/1dragon/assets/images/Ss/link.png)
 
 Here it could be also the same password used for SSH hence, re-used the credential for SSH login.
 
 Validated the newly found credentials for SSH using nxc.
 
-![](/assets/images/Ss/nxc-ssh.png)
+![](/1dragon/assets/images/Ss/nxc-ssh.png)
 
 ```
 nxc ssh  spidersociety.offsec.lab -u spidey -p 'WithGreatPowerComesGreatSecurity99!' 
@@ -153,7 +153,7 @@ That worked. Logged into the target via ssh as spidey user
 
 `ssh  spidey@spidersociety.offsec.lab`
 
-![](/assets/images/Ss/spidey-shell.png)
+![](/1dragon/assets/images/Ss/spidey-shell.png)
 
 Captured the local.txt
 
@@ -223,7 +223,7 @@ spidey@spidersociety:/usr/local/bin$ sudo /bin/systemctl restart spiderbackup.se
 
 Had a netcat listener at local port 4444. And Reverse shell connected back as root user after the restart of service was done.
 
-![](/assets/images/Ss/root.png)
+![](/1dragon/assets/images/Ss/root.png)
 
 The root.txt was captured under `/root/root.txt`
 

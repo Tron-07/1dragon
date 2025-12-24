@@ -70,7 +70,7 @@ const postsData = JSON.stringify(allPosts);
           if (page === 1) {
             return "/posts/";
           }
-          return `/posts/?page=${page}`;
+          return "/posts/?page=${page}";
         }
 
         function renderPosts(page) {
@@ -320,14 +320,14 @@ const postsData = JSON.stringify(allPosts);
   /* Light mode */
   .dot-hexagon-light {
     background-image:
-      radial-gradient(circle, #07f6926c 1px, transparent 1px), /* Green foreground */
-      radial-gradient(circle, #7f7d7d61 1px, transparent 1px); /* Grey background */
+      radial-gradient(circle, #07f692ab 1px, transparent 1px), /* Green foreground */
+      radial-gradient(circle, #7f7d7de1 1px, transparent 1px); /* Grey background */
     background-size: 24px 41.57px; /* Hex grid size */
     background-repeat: repeat;
     background-position: 0 0, 12px 20.78px; /* Initial position */
     animation:
-      greenDown 8s linear infinite,   /* Green dots move faster */
-      greyDown 16s linear infinite;   /* Grey dots move slower */
+      greenDown 4s linear infinite,   /* Green dots move faster */
+      greyDown 12s linear infinite;   /* Grey dots move slower */
   }
 
   /* Dark mode */
@@ -356,21 +356,24 @@ const postsData = JSON.stringify(allPosts);
   }
 </style>
   </head>
-  <body class="bg-white dark:bg-neutral-900 transition-colors duration-300">
-    <div class="fixed inset-0 z-0 pointer-events-none">
-      <div
-        class="absolute inset-0 -z-10 dot-hexagon-light dark:dot-hexagon-dark"
-      >
+    <body
+    class="min-h-screen flex flex-col bg-white dark:bg-neutral-900 transition-colors duration-300"
+  >
+    <div class="relative flex-grow flex flex-col">
+      <div class="absolute inset-0 z-0">
+        <div
+          class="absolute inset-0 -z-10 dot-hexagon-light dark:dot-hexagon-dark"
+        >
+        </div>
+        <div
+          class="absolute inset-0 bg-[radial-gradient(ellipse_80%_80%_at_50%_50%,transparent_0%,rgba(255,255,255,0.5)_60%,rgba(255,255,255,0.9)_85%,white_100%)] dark:bg-[radial-gradient(ellipse_80%_80%_at_50%_50%,transparent_0%,rgba(23,23,23,0.5)_60%,rgba(23,23,23,0.9)_85%,rgb(23,23,23)_100%)] -z-10"
+        >
+        </div>
+        <div
+          class="absolute left-0 right-0 top-0 -z-10 m-auto h-[auto] w-[1200px] rounded-full bg-neutral-400 opacity-10 blur-[100px]"
+        >
+        </div>
       </div>
-      <div
-        class="absolute inset-0 bg-[radial-gradient(ellipse_80%_80%_at_50%_50%,transparent_0%,rgba(255,255,255,0.5)_60%,rgba(255,255,255,0.9)_85%,white_100%)] dark:bg-[radial-gradient(ellipse_80%_80%_at_50%_50%,transparent_0%,rgba(23,23,23,0.5)_60%,rgba(23,23,23,0.9)_85%,rgb(23,23,23)_100%)] -z-10"
-      >
-      </div>
-      <div
-        class="absolute left-0 right-0 top-0 -z-10 m-auto h-[1200px] w-[1200px] rounded-full bg-neutral-400 opacity-10 blur-[100px]"
-      >
-      </div>
-    </div>
 
     <main class="flex-1 relative z-10">
       <Navigation />

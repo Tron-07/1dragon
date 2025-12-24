@@ -16,16 +16,16 @@ export const homeContent = {
     buttons: {
     about: {
       text: "whoami",
-      href: "/about/",
+      href: `${import.meta.env.BASE_URL}about/`,
     },
     posts: {
       text: "Read Hacks",
-      href: "/posts/",
+      href: `${import.meta.env.BASE_URL}posts/`,
     },
   },
   images: {
-    light: "https://multiplepage-portfolio.edgeone.app/assets/images/tech-background-light.svg",
-    dark: "/assets/images/tech-background-dark.svg",
+    light: `${import.meta.env.BASE_URL}/assets/images/tech-background-light.svg`,
+    dark: `${import.meta.env.BASE_URL}/assets/images/tech-background-dark.svg`,
   },
 };
 
@@ -38,6 +38,7 @@ export const aboutContent = {
   description:
     "A dual perspective professional with expertise in offensive security and experiece in software develoment.",
     skills: [
+      "Skills",
       "Penetration Testing",
       "Python",
       "Burp Suite",
@@ -48,9 +49,9 @@ export const aboutContent = {
     "Network Penetration Testing"
   ],
   image: {
-    src: "/assets/images/about/coder.jpg",
+    src: `${import.meta.env.BASE_URL}/assets/images/about/abt.jpg`,
     alt: "Profile",
-  },
+  }, 
   experience: {
     /*title: "",
     items: [

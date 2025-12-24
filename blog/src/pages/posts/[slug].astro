@@ -36,7 +36,7 @@ if (!Content) {
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="generator" content={Astro.generator} />
-    <title>{frontmatter.title} - Your Portfolio</title>
+    <title>{frontmatter.title}</title>
     <meta name="description" content={frontmatter.description} />
     <script is:inline>
       (function () {
@@ -108,32 +108,56 @@ if (!Content) {
         display: none !important;
       }
 
-      .dot-hexagon-light {
-        background-image: radial-gradient(
-            circle,
-            #80808045 1px,
-            transparent 1px
-          ),
-          radial-gradient(circle, #80808045 1px, transparent 1px);
-        background-size: 24px 41.57px;
-        background-position:
-          0 0,
-          12px 20.78px;
-      }
 
-      .dot-hexagon-dark {
-        background-image: radial-gradient(
-            circle,
-            #ffffff35 1px,
-            transparent 1px
-          ),
-          radial-gradient(circle, #ffffff35 1px, transparent 1px);
-        background-size: 24px 41.57px;
-        background-position:
-          0 0,
-          12px 20.78px;
-      }
+@keyframes float {
+    0% { transform: scale(1.2); }
+    50% { transform: scale(1.3); }
+    100% { transform: scale(1.2); }
+  }
+
+  /* -------------------
+     Parallax Hexagonal Rain
+     ------------------- */
+
+  /* Light mode */
+  .dot-hexagon-light {
+    background-image:
+      radial-gradient(circle, #f60707ab 1px, transparent 1px), /* Green foreground */
+      radial-gradient(circle, #7f7d7d61 1px, transparent 1px); /* Grey background */
+    background-size: 24px 41.57px; /* Hex grid size */
+    background-repeat: repeat;
+    background-position: 0 0, 12px 20.78px; /* Initial position */
+    animation:
+      greenDown 5s linear infinite,   /* Green dots move faster */
+      greyDown 10s linear infinite;   /* Grey dots move slower */
+  }
+
+  /* Dark mode */
+  .dot-hexagon-dark {
+    background-image:
+      radial-gradient(circle, #ffffff35 1px, transparent 1px), /* Green foreground */
+      radial-gradient(circle, #ffffff35 1px, transparent 1px); /* Grey background */
+    background-size: 24px 41.57px;
+    background-repeat: repeat;
+    background-position: 0 0, 12px 20.78px;
+    animation:
+      greenDown 12s linear infinite,  /* Green moves faster */
+      greyDown 24s linear infinite;   /* Grey moves slower */
+  }
+
+  /* Green layer (foreground) - moves faster and further down */
+  @keyframes greenDown {
+    0%   { background-position: 0 0, 12px 20.78px; }
+    100% { background-position: 0 164.56px, 12px 20.78px; } /* Green moves more, faster */
+  }
+
+  /* Grey layer (background) - moves slower and less far down */
+  @keyframes greyDown {
+    0%   { background-position: 0 0, 12px 20.78px; }
+    100% { background-position: 0 83.14px, 12px 62.35px; } /* Grey moves less, slower */
+  }
     </style>
+    
   </head>
   <body class="bg-white dark:bg-neutral-900 transition-colors duration-300">
     <div class="fixed inset-0 z-0 pointer-events-none">
@@ -191,6 +215,7 @@ if (!Content) {
         <div class="prose prose-neutral dark:prose-invert max-w-none">
           <Content />
         </div>
+
       </article>
     </main>
 

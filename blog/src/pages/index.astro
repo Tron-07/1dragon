@@ -66,29 +66,31 @@ import { siteConfig, homeContent } from "../config/content.ts";
      ------------------- */
 
   /* Light mode */
+
   .dot-hexagon-light {
     background-image:
-      radial-gradient(circle, #07f6926c 1px, transparent 1px), /* Green foreground */
+      radial-gradient(circle, #07f692ab 1px, transparent 1px), /* Green foreground */
       radial-gradient(circle, #7f7d7d61 1px, transparent 1px); /* Grey background */
     background-size: 24px 41.57px; /* Hex grid size */
     background-repeat: repeat;
     background-position: 0 0, 12px 20.78px; /* Initial position */
     animation:
-      greenDown 8s linear infinite,   /* Green dots move faster */
-      greyDown 16s linear infinite;   /* Grey dots move slower */
+      greenDown 3s linear infinite,   /* Green dots move faster */
+      greyDown 10s linear infinite;   /* Grey dots move slower */
   }
 
   /* Dark mode */
+
   .dot-hexagon-dark {
     background-image:
-      radial-gradient(circle, #ffffff35 1px, transparent 1px), /* Green foreground */
+      radial-gradient(circle, #07f692ab 1px, transparent 1px), /* Green foreground */
       radial-gradient(circle, #ffffff35 1px, transparent 1px); /* Grey background */
     background-size: 24px 41.57px;
     background-repeat: repeat;
     background-position: 0 0, 12px 20.78px;
     animation:
-      greenDown 12s linear infinite,  /* Green moves faster */
-      greyDown 24s linear infinite;   /* Grey moves slower */
+      greenDown 3s linear infinite,  /* Green moves faster */
+      greyDown 10s linear infinite;   /* Grey moves slower */
   }
 
   /* Green layer (foreground) - moves faster and further down */
@@ -103,10 +105,6 @@ import { siteConfig, homeContent } from "../config/content.ts";
     100% { background-position: 0 83.14px, 12px 62.35px; } /* Grey moves less, slower */
   }
 </style>
-
-
-
-
 
 
   </head>
@@ -189,7 +187,7 @@ import { siteConfig, homeContent } from "../config/content.ts";
                   <img
                     src={homeContent.images.light}
                     alt="Tech Background"
-                    class="w-full h-full object-contain animate-[float_15s_ease-in-out_infinite] hover:scale-125 transition-transform duration-300 opacity-90 dark:hidden"
+                    class="w-full h-full object-contain animate-[float_15s_ease-in-out_infinite] hover:scale-125 transition-transform duration-300 opacity-100 dark:hidden"
                     style="max-width: 100%; max-height: 100%;"
                   />
 
