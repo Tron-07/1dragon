@@ -6,7 +6,9 @@ image: ../assets/images/mice/rdesk.png
 date: 12-20-2025
 ---
 
-# *Initial Access*
+---
+
+# *Enumeration*
 
 Started off with a nmap scan and gathered information about the target  network, systems, services, open ports.
 
