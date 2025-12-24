@@ -1,7 +1,7 @@
 ---
 title: Shenzi PGP walkthrough
 description: Target - Shenzi, OS - Windows
-date: 2025-12-18
+date: 12-10-2025
 readTime: 10 min read
 image: ../assets/images/Shenzi/Xampp-dashboard.png
 ---
