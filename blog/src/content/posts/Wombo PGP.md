@@ -6,7 +6,7 @@ date: 10-12-2025
 image: ../assets/images/wombo/exp.png
 ---
 
- Initial Access and Compromisation*
+ Initial Access and Compromisation
 
 Started off with a nmap scan and gathered information about the target  network, systems, services, open ports.
 
