@@ -1,6 +1,6 @@
 ---
 title: Mice  PGP walkthrough
-description: Target - Mice, OS - Windows
+description: Target - Mice, OS - Windows, Difficulty - Hard
 readTime: 10 min read
 image: ../assets/images/mice/rdesk.png
 date: 12-20-2025
