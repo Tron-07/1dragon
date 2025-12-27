@@ -13,6 +13,20 @@
             "state": {
               "type": "markdown",
               "state": {
+                "file": "blog/src/content/posts/Wombo PGP.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Wombo PGP"
+            }
+          },
+          {
+            "id": "70ab0f122f41795d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
                 "file": "blog/src/content/posts/Mice.md",
                 "mode": "source",
                 "source": false
@@ -77,7 +91,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 397.5
   },
   "right": {
     "id": "8659f7765d013888",
@@ -162,8 +176,20 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "14f8039b116f181b",
+  "active": "41a6649dc27fcf15",
   "lastOpenFiles": [
+    "blog/src/content/posts/Mice.md",
+    "blog/src/content/posts/Wombo PGP.md",
+    "blog/public/assets/images/wombo/revshell-root.png",
+    "blog/public/assets/images/wombo/Pasted image 20251227060631.png",
+    "blog/public/assets/images/wombo/Pasted image 20251227060630.png",
+    "blog/public/assets/images/wombo/web-page-nginx.png",
+    "blog/public/assets/images/wombo/exp-opt.png",
+    "blog/public/assets/images/wombo/exp.png",
+    "blog/public/assets/images/wombo",
+    "blog/src/content/posts/Spider Society PGP.md",
+    "blog/src/content/posts/Shenzi PGP.md",
+    "Untitled",
     "blog/public/favicon.svg",
     "blog/README.md"
   ]
