@@ -6,8 +6,8 @@ date: 10-12-2025
 image: ../assets/images/wombo/exp.png
 ---
 
- Initial Access and Compromisation
-
+ ## ***Enumeration***
+ 
 Started off with a nmap scan and gathered information about the target  network, systems, services, open ports.
 
 ```
@@ -168,7 +168,7 @@ Searched for exisitng exploit about this version of redis and discovered one  ht
 
 ---
 
-# *Initial Access and Compromisation*
+ ## ***Initial Access and System Comprmise***
 
 After mirroring the exploit ran it with the following parameter.
 

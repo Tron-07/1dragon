@@ -6,8 +6,7 @@ image: ../assets/images/mice/rdesk.png
 date: 12-20-2025
 ---
 
-
-Enumeration
+ ## ***Enumeration***
 
 Started off with a nmap scan and gathered information about the target  network, systems, services, open ports.
 
@@ -144,7 +143,6 @@ Finally proof.txt was captured successfully under `C:\Users\Administrator\Deskto
 ![NT](/1dragon/assets/images/mice/nt.png)
 
 ---
-
 
 										Target compromised - |^| ^( |< 3 D
 

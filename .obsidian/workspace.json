@@ -8,34 +8,33 @@
         "type": "tabs",
         "children": [
           {
-            "id": "14f8039b116f181b",
+            "id": "a633357760e68341",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "blog/src/content/posts/Wombo PGP.md",
-                "mode": "source",
-                "source": false
+                "file": "blog/public/assets/images/exflrd/login.png"
               },
-              "icon": "lucide-file",
-              "title": "Wombo PGP"
+              "icon": "lucide-image",
+              "title": "login"
             }
           },
           {
-            "id": "70ab0f122f41795d",
+            "id": "7dde439785a8c02f",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "blog/src/content/posts/Mice.md",
+                "file": "blog/src/content/posts/Exfiltrated PGP.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Mice"
+              "title": "Exfiltrated PGP"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -66,7 +65,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "2020251228180104",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -91,7 +90,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 397.5
+    "width": 295.5
   },
   "right": {
     "id": "8659f7765d013888",
@@ -176,21 +175,34 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "41a6649dc27fcf15",
+  "active": "7dde439785a8c02f",
   "lastOpenFiles": [
-    "blog/src/content/posts/Mice.md",
-    "blog/src/content/posts/Wombo PGP.md",
-    "blog/public/assets/images/wombo/revshell-root.png",
-    "blog/public/assets/images/wombo/Pasted image 20251227060631.png",
-    "blog/public/assets/images/wombo/Pasted image 20251227060630.png",
-    "blog/public/assets/images/wombo/web-page-nginx.png",
-    "blog/public/assets/images/wombo/exp-opt.png",
-    "blog/public/assets/images/wombo/exp.png",
-    "blog/public/assets/images/wombo",
-    "blog/src/content/posts/Spider Society PGP.md",
-    "blog/src/content/posts/Shenzi PGP.md",
-    "Untitled",
     "blog/public/favicon.svg",
+    "blog/public/favico.svg",
+    "blog/public/img.svg",
+    "blog/img.svg",
+    "img.svg",
+    "svg.png",
+    "blog/src/content/posts/Exfiltrated PGP.md",
+    "favicon Background Removed.png",
+    "favicon.png",
+    "favicon.svg",
+    "blog/src/content/posts/Wombo PGP.md",
+    "blog/src/content/posts/Mice.md",
+    "blog/public/assets/images/exflrd/subrion-login.png",
+    "blog/public/assets/images/exflrd/login.png",
+    "blog/src/content/posts/blog/public/assets/images/exflrd",
+    "blog/src/content/posts/blog/public/assets/images",
+    "blog/src/content/posts/blog/public/assets",
+    "blog/src/content/posts/blog/public",
+    "blog/src/content/posts/blog",
+    "blog/src/content/posts/public/assets/images/exflrd",
+    "blog/src/content/posts/public/assets/images",
+    "blog/src/content/posts/public/assets",
+    "blog/src/content/posts/public",
+    "blog/src/content/posts/assets/images/exflrd",
+    "blog/src/content/posts/Shenzi PGP.md",
+    "blog/src/content/posts/Spider Society PGP.md",
     "blog/README.md"
   ]
 }
