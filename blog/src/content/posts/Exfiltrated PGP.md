@@ -6,7 +6,7 @@ date: 12-26-2025
 image: ../assets/images/exflrd/subrion-login.png
 ---
 
- ## ***Enumeration***
+#### ***Enumeration***
 
 Started off with a nmap scan and gathered information about the target  network, systems, services, open ports.
 
@@ -64,7 +64,7 @@ In Searchsploit discovered multiple exploits for the version 4.2.1 but one parti
 It had a CVE ID **CVE-2018-19422 - SubrionCMS 4.2.1 - File Upload Bypass to RCE**
 
 ---
-# *Initial Access*
+#### ***Initial Access***
 
 First ran the exploit with the help  `-h` parameter to understand what are the required pieces to have a successful exploitation.
 
@@ -93,7 +93,7 @@ Had a listener at `rlwrap nc -lnvp 4444`
 ![revs](/1dragon/assets/images/exflrd/rev.png)
 
 ---
-# *Privilege Escalation*
+#### ***Privilege Escalation***
 
 Having the shell as www-data tried to read the local.txt flag under `/home/coaran/local.txt` but permission denied for www-data. Further transferred linpeas.sh and pspy32s to target for internal enumeration.
 
@@ -170,4 +170,4 @@ Captured the flags under /home/coaran/local.txt and /root/proof.txt
 ![root-shell](/1dragon/assets/images/exflrd/rev.png)
 
 ---
-										Target compromised - |^| ^( |< 3 D
+										Target compromised - |^| ^ ( |< 3 D

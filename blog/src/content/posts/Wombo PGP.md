@@ -199,4 +199,4 @@ Captured the proof.txt under /root successfully.
 
 ---
 
-										Target compromised - |^| ^( |< 3 D
+										Target compromised - |^| ^ ( |< 3 D

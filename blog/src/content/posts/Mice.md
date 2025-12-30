@@ -144,5 +144,5 @@ Finally proof.txt was captured successfully under `C:\Users\Administrator\Deskto
 
 ---
 
-										Target compromised - |^| ^( |< 3 D
+										Target compromised - |^| ^ ( |< 3 D
 
