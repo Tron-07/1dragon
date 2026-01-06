@@ -90,7 +90,7 @@ SF:Bad\x20Request\r\nConnection:\x20close\r\n\r\n");
 Service Info: OSs: Linux, FreeBSD; CPE: cpe:/o:linux:linux_kernel, cpe:/o:freebsd:freebsd
 ```
 
-Discovered a  Redmine web app  login page on port 8080 and logged in as admin with default credentials `admin:admin` 
+Discovered a  Redmine web app  login page on port 8080 and logged in as admin with default credentials `admin:admin`
 
 ![redmine-webpage](/1dragon/assets/images/peppo/Pasted%20image%2020260103034315.png)
 
