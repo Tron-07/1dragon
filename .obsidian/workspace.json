@@ -4,21 +4,19 @@
     "type": "split",
     "children": [
       {
-        "id": "e7aa2a378a910bdc",
+        "id": "a80e76618a55a282",
         "type": "tabs",
         "children": [
           {
-            "id": "0ac8e6df8f251f67",
+            "id": "28eaaf9c5ac0f8ef",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "blog/src/content/posts/Readys.md",
-                "mode": "source",
-                "source": false
+                "file": "blog/public/assets/images/wph/whub.png"
               },
-              "icon": "lucide-file",
-              "title": "Readys"
+              "icon": "lucide-image",
+              "title": "whub"
             }
           }
         ]
@@ -77,7 +75,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 295.5
+    "width": 326.5
   },
   "right": {
     "id": "8659f7765d013888",
@@ -162,24 +160,29 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "0ac8e6df8f251f67",
+  "active": "28eaaf9c5ac0f8ef",
   "lastOpenFiles": [
-    "blog/public/assets/images/readys/Pasted image 20251229082136.png",
-    "blog/src/content/posts/Exfiltrated PGP.md",
-    "blog/public/assets/images/readys/Pasted image 20251229070417.png",
-    "blog/public/assets/images/readys/Pasted image 20251230004200.png",
-    "blog/public/assets/images/readys/Pasted image 20251230003558.png",
-    "blog/public/assets/images/readys/rde.png",
-    "blog/src/content/posts/Readys.md",
-    "blog/public/assets/images/Readys/Pasted image 20251230004200.png",
-    "blog/public/assets/images/Readys/Pasted image 20251230003558.png",
-    "blog/public/assets/images/Readys/Pasted image 20251230000135.png",
-    "blog/public/assets/images/Readys/Pasted image 20251229235358.png",
-    "blog/public/assets/images/Readys/Pasted image 20251229234349.png",
-    "blog/src/content/posts/Mice.md",
-    "blog/src/content/posts/Spider Society PGP.md",
-    "blog/public/assets/images/Readys",
+    "blog/src/content/posts/WallpaperHub PGP.md",
+    "blog/public/assets/images/wph/whub.png",
+    "blog/public/assets/images/wph/whub.png",
     "blog/src/content/posts/Wombo PGP.md",
+    "blog/src/content/posts/Spider Society PGP.md",
+    "blog/public/assets/images/wph/Pasted image 20260105232010.png",
+    "blog/public/assets/images/wph/Pasted image 20260105231007.png",
+    "blog/src/content/posts/Mice.md",
+    "blog/public/assets/images/wph/Pasted image 20260106012052.png",
+    "blog/public/assets/images/wph/Pasted image 20260106012024.png",
+    "blog/public/assets/images/wph/Pasted image 20260106010656.png",
+    "blog/public/assets/images/wph/Pasted image 20260106010519.png",
+    "blog/public/assets/images/wph/Pasted image 20260106010359.png",
+    "blog/public/assets/images/wph/Pasted image 20260106010308.png",
+    "blog/src/content/posts/Exfiltrated PGP.md",
+    "blog/src/content/posts/Readys.md",
+    "blog/src/content/posts/Peppo PGP.md",
+    "blog/src/content/posts/Mantis PGP.md",
+    "blog/public/assets/images/peppo",
+    "blog/public/assets/images/mantis",
+    "blog/public/assets/images/Readys",
     "blog/src/content/posts/blog/public/assets/images/exflrd",
     "blog/src/content/posts/blog/public/assets/images",
     "blog/src/content/posts/blog/public/assets",
@@ -187,8 +190,6 @@
     "blog/src/content/posts/blog",
     "blog/src/content/posts/public/assets/images/exflrd",
     "blog/src/content/posts/public/assets/images",
-    "blog/src/content/posts/public/assets",
-    "blog/src/content/posts/public",
     "blog/src/content/posts/Shenzi PGP.md",
     "blog/README.md"
   ]

@@ -1,5 +1,5 @@
 ---
-title: Wombo PGP
+title: Wombo PGP walkthrough
 description: Target - Wombo, OS - Linux, Difficulty - Intermediate
 readTime: 10 min read
 date: 10-12-2025
