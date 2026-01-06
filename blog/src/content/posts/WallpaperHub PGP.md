@@ -133,13 +133,13 @@ Discovered that images in `/gallery` page can be upload from here.
 
 
 ![myuplds](/1dragon/assets/images/wph/Pasted%20image%2020260105232553.png)
-Made a empty file named as  rev.img
+Created an empty file named as rev.img
 
 Ignited BurpSuite and Intercepted the uploaded file.
 
 ![burp-intr](/1dragon/assets/images/wph/Pasted%20image%2020260105233625.png)
 
-in the `filename="rev.png"`  modified it as `../../../../../etc/passwd` to see if that actually fetches the `/etc/passwd` file contents
+In the ```filename="rev.png"```  modified it as ```../../../../../etc/passwd``` to see if that actually fetches the `/etc/passwd` file contents
 
 ![modfilename](/1dragon/assets/images/wph/Pasted%20image%2020260105233855.png)
 
