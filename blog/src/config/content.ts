@@ -36,14 +36,14 @@ export const aboutContent = {
   },
   title: "whoami",
   description:
-    "A dual perspective professional with expertise in offensive security and experiece in software develoment.",
+    "A dual perspective professional with expertise in offensive security and experiece in software development.",
     skills: [
-      "Skills",
+      "Skills -->",
       "Penetration Testing",
       "Python",
       "Burp Suite",
+      "Nmap",
     "Active Directory Pen-testing",
-    "Java",
     "SQL",
     "OWASP Top 10",
     "Network Penetration Testing"

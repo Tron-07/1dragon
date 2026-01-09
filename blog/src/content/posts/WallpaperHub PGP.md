@@ -3,7 +3,7 @@ title: WallpaperHub PGP walkthrough
 description: Target - WallpaperHub, OS - Linux, Difficulty - Very Hard
 readTime: 20 min read
 image: ../assets/images/wph/whub.png
-date: 03-01-2026
+date: 01-03-2026
 ---
 #### ***Enumeration***
 

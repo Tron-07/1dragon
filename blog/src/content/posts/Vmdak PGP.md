@@ -3,7 +3,7 @@ title: Vmdak PGP walkthrough
 description: Target - Vmdak, OS - Linux, Difficulty - Hard
 readTime: 15 min read
 image: ../assets/images/vmd/fast_5.png
-date: 05-01-2026
+date: 01-05-2026
 ---
 
 #### ***Enumeration***
