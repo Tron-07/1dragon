@@ -4,19 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "a80e76618a55a282",
+        "id": "de00ac7e92bfc3be",
         "type": "tabs",
         "children": [
           {
-            "id": "28eaaf9c5ac0f8ef",
+            "id": "9f300b42c8bab26d",
             "type": "leaf",
             "state": {
-              "type": "image",
-              "state": {
-                "file": "blog/public/assets/images/wph/whub.png"
-              },
-              "icon": "lucide-image",
-              "title": "whub"
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
             }
           }
         ]
@@ -50,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "2020251228180104",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -75,7 +73,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 326.5
+    "width": 434.5
   },
   "right": {
     "id": "8659f7765d013888",
@@ -160,37 +158,47 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "28eaaf9c5ac0f8ef",
+  "active": "9f300b42c8bab26d",
   "lastOpenFiles": [
     "blog/src/content/posts/WallpaperHub PGP.md",
-    "blog/public/assets/images/wph/whub.png",
-    "blog/public/assets/images/wph/whub.png",
-    "blog/src/content/posts/Wombo PGP.md",
+    "blog/public/assets/images/slrt/slort-webpage.png",
+    "blog/public/assets/images/slrt/Pasted image 20260113231027.png",
+    "blog/public/assets/images/slrt/Pasted image 20260113230103.png",
+    "blog/src/content/posts/Slort PGP.md",
+    "blog/src/content/posts/Shenzi PGP.md",
+    "blog/public/assets/images/slrt/Pasted image 20260113234306.png",
+    "blog/public/assets/images/slrt/Pasted image 20260113234237.png",
+    "blog/public/assets/images/slrt/Pasted image 20260113233038.png",
+    "blog/public/assets/images/slrt/Pasted image 20260113232435.png",
+    "blog/public/assets/images/slrt/Pasted image 20260113232231.png",
+    "blog/public/assets/images/slrt/Pasted image 20260113232027.png",
+    "blog/public/assets/images/slrt/Pasted image 20260113231956.png",
+    "blog/public/assets/images/slrt",
+    "blog/src/content/posts/Snookums PGP.md",
+    "blog/src/content/posts/Fantastic PGP.md",
     "blog/src/content/posts/Spider Society PGP.md",
-    "blog/public/assets/images/wph/Pasted image 20260105232010.png",
-    "blog/public/assets/images/wph/Pasted image 20260105231007.png",
-    "blog/src/content/posts/Mice.md",
-    "blog/public/assets/images/wph/Pasted image 20260106012052.png",
-    "blog/public/assets/images/wph/Pasted image 20260106012024.png",
-    "blog/public/assets/images/wph/Pasted image 20260106010656.png",
-    "blog/public/assets/images/wph/Pasted image 20260106010519.png",
-    "blog/public/assets/images/wph/Pasted image 20260106010359.png",
-    "blog/public/assets/images/wph/Pasted image 20260106010308.png",
+    "blog/src/content/posts/Wombo PGP.md",
+    "blog/public/assets/images/snooks",
+    "blog/public/assets/images/Untitled.md",
+    "blog/src/content/posts/Sybaris PGP.md",
+    "blog/public/assets/images/syb",
+    "blog/src/content/posts/Resourced PGP.md",
+    "blog/src/content/posts/Readys PGP.md",
+    "blog/public/assets/images/rscd",
+    "blog/src/content/posts/BillyBoss PGP.md",
     "blog/src/content/posts/Exfiltrated PGP.md",
-    "blog/src/content/posts/Readys.md",
+    "blog/src/content/posts/Mice.md",
+    "blog/src/content/Access.md",
+    "blog/src/content/posts/Vmdak PGP.md",
+    "blog/public/assets/images/billyb",
     "blog/src/content/posts/Peppo PGP.md",
+    "blog/src/content/posts/Access.md",
+    "blog/public/assets/images/fnts",
+    "blog/public/assets/images/acs",
+    "blog/public/assets/images/vmd",
     "blog/src/content/posts/Mantis PGP.md",
     "blog/public/assets/images/peppo",
     "blog/public/assets/images/mantis",
-    "blog/public/assets/images/Readys",
-    "blog/src/content/posts/blog/public/assets/images/exflrd",
-    "blog/src/content/posts/blog/public/assets/images",
-    "blog/src/content/posts/blog/public/assets",
-    "blog/src/content/posts/blog/public",
-    "blog/src/content/posts/blog",
-    "blog/src/content/posts/public/assets/images/exflrd",
-    "blog/src/content/posts/public/assets/images",
-    "blog/src/content/posts/Shenzi PGP.md",
     "blog/README.md"
   ]
 }
