@@ -2,7 +2,7 @@
 title: Slort PGP walkthrough
 description: Target - Slort, OS - Windows, Difficulty - Intermediate
 readTime: 10 min read
-date: 01-07-2026
+date: 01-10-2026
 image: ../assets/images/slrt/slort-webpage.png
 ---
 ---
