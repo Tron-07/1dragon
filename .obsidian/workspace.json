@@ -4,17 +4,35 @@
     "type": "split",
     "children": [
       {
-        "id": "de00ac7e92bfc3be",
+        "id": "595c04326df15567",
         "type": "tabs",
         "children": [
           {
-            "id": "9f300b42c8bab26d",
+            "id": "cfa9b373961bf14c",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "blog/src/content/posts/Vault PGP.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "Vault PGP"
+            }
+          },
+          {
+            "id": "e276bfa495a06c01",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "blog/src/content/posts/Exfiltrated PGP.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Exfiltrated PGP"
             }
           }
         ]
@@ -73,7 +91,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 434.5
+    "width": 219.5
   },
   "right": {
     "id": "8659f7765d013888",
@@ -158,47 +176,52 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "9f300b42c8bab26d",
+  "active": "cfa9b373961bf14c",
   "lastOpenFiles": [
-    "blog/src/content/posts/WallpaperHub PGP.md",
-    "blog/public/assets/images/slrt/slort-webpage.png",
-    "blog/public/assets/images/slrt/Pasted image 20260113231027.png",
-    "blog/public/assets/images/slrt/Pasted image 20260113230103.png",
-    "blog/src/content/posts/Slort PGP.md",
+    "blog/public/assets/images/vlt/vlt.png",
+    "blog/public/assets/images/exflrd/login.png",
+    "blog/src/content/posts/Vault PGP.md",
+    "blog/src/content/posts/Exfiltrated PGP.md",
+    "blog/public/assets/images/vlt/Pasted image 20260115043430.png",
+    "blog/public/assets/images/vlt/Pasted image 20260115043412.png",
+    "blog/public/assets/images/vlt/Pasted image 20260115042551.png",
+    "blog/public/assets/images/vlt/Pasted image 20260115034108.png",
+    "blog/public/assets/images/vlt/Pasted image 20260115033941.png",
+    "blog/public/assets/images/vlt/Pasted image 20260115015917.png",
+    "blog/public/assets/images/vlt/Pasted image 20260115015033.png",
+    "blog/public/assets/images/vlt/Pasted image 20260115014757.png",
+    "blog/public/assets/images/vlt/Pasted image 20260115014540.png",
+    "blog/src/content/posts/Readys PGP.md",
+    "blog/src/content/posts/Vmdak PGP.md",
+    "blog/src/content/BillyBoss PGP.md",
+    "blog/src/content/posts/Wombo PGP.md",
+    "blog/src/content/Resourced PGP.md",
+    "blog/src/content/posts/Peppo PGP.md",
     "blog/src/content/posts/Shenzi PGP.md",
-    "blog/public/assets/images/slrt/Pasted image 20260113234306.png",
-    "blog/public/assets/images/slrt/Pasted image 20260113234237.png",
-    "blog/public/assets/images/slrt/Pasted image 20260113233038.png",
-    "blog/public/assets/images/slrt/Pasted image 20260113232435.png",
-    "blog/public/assets/images/slrt/Pasted image 20260113232231.png",
-    "blog/public/assets/images/slrt/Pasted image 20260113232027.png",
-    "blog/public/assets/images/slrt/Pasted image 20260113231956.png",
+    "blog/src/content/posts/Mice.md",
+    "blog/src/content/posts/PC PGP.md",
+    "blog/public/assets/images/vlt",
+    "blog/src/content/posts/Slort PGP.md",
+    "blog/public/assets/images/pc",
+    "blog/src/content/posts/WallpaperHub PGP.md",
     "blog/public/assets/images/slrt",
     "blog/src/content/posts/Snookums PGP.md",
     "blog/src/content/posts/Fantastic PGP.md",
     "blog/src/content/posts/Spider Society PGP.md",
-    "blog/src/content/posts/Wombo PGP.md",
     "blog/public/assets/images/snooks",
     "blog/public/assets/images/Untitled.md",
     "blog/src/content/posts/Sybaris PGP.md",
     "blog/public/assets/images/syb",
     "blog/src/content/posts/Resourced PGP.md",
-    "blog/src/content/posts/Readys PGP.md",
     "blog/public/assets/images/rscd",
     "blog/src/content/posts/BillyBoss PGP.md",
-    "blog/src/content/posts/Exfiltrated PGP.md",
-    "blog/src/content/posts/Mice.md",
     "blog/src/content/Access.md",
-    "blog/src/content/posts/Vmdak PGP.md",
     "blog/public/assets/images/billyb",
-    "blog/src/content/posts/Peppo PGP.md",
     "blog/src/content/posts/Access.md",
     "blog/public/assets/images/fnts",
     "blog/public/assets/images/acs",
     "blog/public/assets/images/vmd",
     "blog/src/content/posts/Mantis PGP.md",
-    "blog/public/assets/images/peppo",
-    "blog/public/assets/images/mantis",
     "blog/README.md"
   ]
 }

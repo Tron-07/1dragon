@@ -143,7 +143,7 @@ anirudh
 The command completed successfully.
 ```
 
-Used im/1dragon/assets/images/vlt/packet-psexec with anirudhs credential logged in to the target as NT Authority.
+Used impacket-psexec with anirudh's credential logged in to the target as NT Authority.
 
 ![](/1dragon/assets/images/vlt/Pasted%20image%2020260115043412.png)
 
