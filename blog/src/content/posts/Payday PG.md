@@ -101,9 +101,6 @@ Host script results:
 |_nbstat: NetBIOS name: PAYDAY, NetBIOS user: <unknown>, NetBIOS MAC: <unknown> (unknown)
 |_clock-skew: mean: 50m06s, deviation: 2h02m29s, median: 6s
 
-Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-# Nmap done at Wed Dec 18 00:05:21 2024 -- 1 IP address (1 host up) scanned in 33.04 seconds
-
 ```
 
 Discovered a web-page on port 80
