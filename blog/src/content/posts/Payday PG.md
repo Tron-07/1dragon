@@ -7,7 +7,8 @@ image: ../assets/images/pyd/CS_cart.png
 ---
 
 ---
-#### ***Enumeration
+
+#### ***Enumeration***
 
 Started off with a nmap scan and gathered information about the target  network, systems, services, open ports.
 
