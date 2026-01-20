@@ -1,6 +1,6 @@
 ---
-title: Fantastic PGP walkthrough
-description: Target - Fantastic, OS - Linux, Difficulty - Very Hard
+title: Fanatastic PGP walkthrough
+description: Target - Fanatastic, OS - Linux, Difficulty - Very Hard
 readTime: 15 min read
 image: ../assets/images/fnts/grfna.png
 date: 01-06-2026
@@ -13,7 +13,7 @@ date: 01-06-2026
 Started off with a nmap scan and gathered information about the target  network, systems, services, open ports.
 
 ```
-nmap -sVC -n -p- -T4 --open -Pn -oN Fantastic-nmap 192.168.132.181
+nmap -sVC -n -p- -T4 --open -Pn -oN Fanatastic-nmap 192.168.132.181
 
 Nmap scan report for 192.168.132.181
 Host is up (0.33s latency).
